@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { MaterialModule } from '@angular/material';
+import {FlexLayoutModule} from "@angular/flex-layout";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { PropertyComponent } from './property/property.component';
 
@@ -17,6 +18,7 @@ import { PropertyComponent } from './property/property.component';
         BrowserModule,
         AppRoutingModule,
         MaterialModule,
+        FlexLayoutModule,
         BrowserAnimationsModule
     ],
     providers: [],
