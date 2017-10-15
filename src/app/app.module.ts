@@ -8,30 +8,21 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from '@angular/material';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { CoreComponent } from './core/core.component';
 import { PropertyComponent } from './property/property.component';
-
-const appRoutes: Routes = [
-    {
-        path: 'property',
-        component: PropertyComponent,
-    },
-    //{ path: '**', component: PageNotFoundComponent }
-];
 
 @NgModule({
     declarations: [
         AppComponent,
-        PropertyComponent
+        CoreComponent,
+        PropertyComponent,
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         MaterialModule,
         FlexLayoutModule,
-        BrowserAnimationsModule,
-        RouterModule.forRoot(
-            appRoutes
-        )
+        BrowserAnimationsModule
     ],
     providers: [],
     bootstrap: [AppComponent]

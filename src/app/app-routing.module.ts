@@ -1,7 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+//Routes
+import { coreRoutes } from './core/core.routes';
+import { propertyRoutes } from './property/property.routes';
+
+const routes: Routes = [
+    {
+        path: '',
+        redirectTo: '/',
+        pathMatch: 'full'
+    },
+    ...coreRoutes,
+    ...propertyRoutes
+    //{ path: '**', component: PageNotFoundComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
