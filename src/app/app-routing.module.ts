@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 //Routes
-import { coreRoutes } from './core/core.routes';
 import { propertyRoutes } from './property/property.routes';
+import { listingRoutes } from './property/listing/listing.routes';
 
 const routes: Routes = [
     {
@@ -11,8 +11,8 @@ const routes: Routes = [
         redirectTo: '/',
         pathMatch: 'full'
     },
-    ...coreRoutes,
-    ...propertyRoutes
+    ...propertyRoutes,
+    ...listingRoutes
     //{ path: '**', component: PageNotFoundComponent }
 ];
 

@@ -8,14 +8,14 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from '@angular/material';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { CoreComponent } from './core/core.component';
 import { PropertyComponent } from './property/property.component';
+import { ListingComponent } from './property/listing/listing.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        CoreComponent,
         PropertyComponent,
+        ListingComponent,
     ],
     imports: [
         BrowserModule,
