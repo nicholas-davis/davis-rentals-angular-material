@@ -1,6 +1,52 @@
 {
-  "results": [
-    "Item 1",
-    "Item 2"
+  "property": [
+    {
+      "title": "",
+      "description": [
+        {
+          "short": "",
+          "long": ""
+        }
+      ],
+      "address": "",
+      "bed": "",
+      "bath": "",
+      "sqft": "",
+      "facts": [
+        {
+          "title": "",
+          "description",
+          "icon": "",
+          "": [ "", "" ]
+        }
+      ],
+      "features": [
+        {
+          "title": "",
+          "description"
+        }
+      ],
+      "amenities": [
+        {
+          "": ""
+        }
+      ],
+      "image": [
+        {
+          "title": "",
+          "url": ""
+        }
+      ],
+      "map": [
+        {
+          "latitude": "",
+          "longitude": ""
+        }
+      ],
+      "": "",
+      "": "",
+      "": "",
+      "": ""
+    }
   ]
 }
