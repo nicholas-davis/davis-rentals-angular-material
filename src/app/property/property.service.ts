@@ -9,9 +9,7 @@ export class PropertyService {
     ) { }
 
     getProperty() {
-        this.http.get('api/mock-property.json').subscribe(result => {
-            console.log(result)
-        });
+       return this.http.get('api/mock-property.json');
     }
 
 }

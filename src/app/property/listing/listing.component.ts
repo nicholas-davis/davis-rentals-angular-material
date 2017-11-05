@@ -8,13 +8,18 @@ import { PropertyService } from '../property.service';
     styleUrls: ['./listing.component.scss']
 })
 export class ListingComponent implements OnInit {
-    
+
+    properties: any;
+
     constructor(
         private propertyService: PropertyService
     ) { }
 
     ngOnInit() {
-        this.propertyService.getProperty();
+        this.propertyService.getProperty().subscribe(properties => {
+            this.properties = properties;
+            console.log(this.properties)
+        });
     }
 
 }
