@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
-import { MatToolbarModule, MatCardModule } from '@angular/material';
+import { MatToolbarModule, MatCardModule, MatButtonModule, MatIconModule} from '@angular/material';
 import { FlexLayoutModule} from "@angular/flex-layout";
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AgmCoreModule } from '@agm/core';
@@ -27,6 +27,8 @@ import { ListingComponent } from './property/listing/listing.component';
         HttpClientModule,
         MatToolbarModule,
         MatCardModule,
+        MatButtonModule,
+        MatIconModule,
         FlexLayoutModule,
         BrowserAnimationsModule,
         AgmCoreModule.forRoot({
