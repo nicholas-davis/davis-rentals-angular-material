@@ -1,0 +1,21 @@
+.listing {
+    margin: 20px;
+}
+
+.listing__image {
+    overflow: hidden;
+    margin-bottom: 20px;
+    height: 250px;
+}
+
+.listing__image-background {
+    max-width: 100%;
+    height: auto;
+    -moz-transform: scale(1.8);
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+}
+
+.listing__icon-title {
+    margin: 0;
+}

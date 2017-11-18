@@ -1,19 +1,42 @@
-<mat-card *ngFor="let property of properties.properties">
-    <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Shiba Inu</mat-card-title>
-        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="http://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+<mat-card class="listing" *ngFor="let property of properties.properties">
+    <div class="listing__image">
+        <img class="listing__image-background" mat-card-image src="../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_01.jpg" alt="Photo of a Shiba Inu">
+    </div>
+    <!--<div class="listing__image">
+        <div class="listing__image-background" [style.backgroundImage]="'url('+ property.image[0].url +')'"></div>
+    </div>-->
+    <mat-card-title>
+        {{property.type}} &mdash;
+        {{property.price}} / mo.
+    </mat-card-title>
+    <mat-card-subtitle>
+        {{property.address.street}}
+        {{property.address.city}}
+        {{property.address.state}}
+    </mat-card-subtitle>
     <mat-card-content>
-        <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-            bred for hunting.
-        </p>
+        <mat-list fxLayout>
+            <mat-list-item fxFlex="20">
+                <mat-icon matListIcon>hotel</mat-icon>
+                <h4 class="listing__icon-title" matLine>{{property.bed}} beds</h4>
+            </mat-list-item>
+            <mat-list-item fxFlex="20">
+                <mat-icon matListIcon>hot_tub</mat-icon>
+                <h4 class="listing__icon-title" matLine>{{property.bath}} bath</h4>
+            </mat-list-item>
+            <mat-list-item fxFlex="20">
+                <mat-icon matListIcon>view_compact</mat-icon>
+                <h4 class="listing__icon-title" matLine>{{property.sqft}} sqft.</h4>
+            </mat-list-item>
+            <mat-list-item fxFlex>
+                <mat-icon matListIcon>directions_walk</mat-icon>
+                <h4 class="listing__icon-title" matLine>{{property.walkscore}} (Walker's Paradise)</h4>
+            </mat-list-item>
+        </mat-list>
+        <p>{{property.description.short}}</p>
     </mat-card-content>
     <mat-card-actions>
-        <button mat-button>LIKE</button>
+        <button mat-button>DETAILS</button>
         <button mat-button>SHARE</button>
     </mat-card-actions>
 </mat-card>
