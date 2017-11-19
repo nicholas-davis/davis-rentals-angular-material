@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-//Routes
-import { propertyRoutes } from './property/property.routes';
-import { listingRoutes } from './property/listing/listing.routes';
+import { PropertyComponent } from './property/property.component';
+import { ListingComponent } from './property/listing/listing.component';
 
 const routes: Routes = [
     {
@@ -11,13 +10,21 @@ const routes: Routes = [
         redirectTo: '/',
         pathMatch: 'full'
     },
-    ...propertyRoutes,
-    ...listingRoutes
+    {
+        path: '',
+        component: PropertyComponent,
+        children: [
+            {
+                path: 'listing',
+                component: ListingComponent
+            }
+        ]
+    }
     //{ path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
 })
 export class AppRoutingModule { }

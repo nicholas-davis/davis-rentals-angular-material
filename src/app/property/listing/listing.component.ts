@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PropertyService } from '../property.service';
 
-
 @Component({
     selector: 'app-listing',
     templateUrl: './listing.component.html',
