@@ -13,12 +13,14 @@ import { AppComponent } from './app.component';
 import { PropertyComponent } from './property/property.component';
 import { PropertyService } from './property/property.service';
 import { ListingComponent } from './property/listing/listing.component';
+import { DetailsComponent } from './property/listing/details/details.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         PropertyComponent,
         ListingComponent,
+        DetailsComponent,
     ],
     imports: [
         BrowserModule,
