@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { PropertyComponent } from './property/property.component';
 import { ListingComponent } from './property/listing/listing.component';
+import { DetailsComponent } from './property/listing/details/details.component';
 
 const routes: Routes = [
     {
@@ -15,8 +16,12 @@ const routes: Routes = [
         component: PropertyComponent,
         children: [
             {
-                path: 'listing',
+                path: '',
                 component: ListingComponent
+            },
+            {
+                path: 'details',
+                component: DetailsComponent
             }
         ]
     }
