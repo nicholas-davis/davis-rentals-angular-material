@@ -1,17 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
 
 import { MatToolbarModule, MatCardModule, MatButtonModule, MatIconModule} from '@angular/material';
 import { FlexLayoutModule} from "@angular/flex-layout";
-import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AgmCoreModule } from '@agm/core';
 
+//Services
+import { PropertyService } from './property/property.service';
+
+//Components
 import { AppComponent } from './app.component';
 import { PropertyComponent } from './property/property.component';
-import { PropertyService } from './property/property.service';
 import { ListingComponent } from './property/listing/listing.component';
 import { DetailsComponent } from './property/listing/details/details.component';
 
@@ -20,7 +22,7 @@ import { DetailsComponent } from './property/listing/details/details.component';
         AppComponent,
         PropertyComponent,
         ListingComponent,
-        DetailsComponent,
+        DetailsComponent
     ],
     imports: [
         BrowserModule,
@@ -36,7 +38,9 @@ import { DetailsComponent } from './property/listing/details/details.component';
             apiKey: 'AIzaSyBSnJiWUwA6Dt7qI8BzY9y_cTql_yLmEpE'
         })
     ],
-    providers: [PropertyService],
+    providers: [
+        PropertyService
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

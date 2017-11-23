@@ -20,7 +20,7 @@ const routes: Routes = [
                 component: ListingComponent
             },
             {
-                path: 'details',
+                path: 'listing/:address',
                 component: DetailsComponent
             }
         ]

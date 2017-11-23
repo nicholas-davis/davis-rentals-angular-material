@@ -36,7 +36,7 @@
         <p>{{property.description.short}}</p>
     </mat-card-content>
     <mat-card-actions>
-        <button mat-button routerLink="/details">DETAILS</button>
+        <button mat-button  [routerLink]="['/listing', property.url]">DETAILS</button>
         <button mat-button>SHARE</button>
     </mat-card-actions>
 </mat-card>
