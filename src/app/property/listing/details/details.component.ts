@@ -11,11 +11,18 @@ export class DetailsComponent implements OnInit {
     constructor(
         private meta: Meta,
         private title: Title
-    ) { }
+    ) {
+        title.setTitle('Davis');
+
+        meta.addTags([
+            { name: 'author', content: '' },
+            { name: 'keywords', content: '' },
+            { name: 'description', content: '' }
+        ]);
+
+    }
 
     ngOnInit() {
-        this.title.setTitle('Hello World');
-        this.meta.updateTag({ name: 'description', content: 'Hello World description!' });
     }
 
 }
