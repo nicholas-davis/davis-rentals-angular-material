@@ -10,6 +10,7 @@ import { AgmCoreModule } from '@agm/core';
 
 //Services
 import { PropertyService } from './property/property.service';
+import { UtilityService } from './shared/utility.service';
 
 //Components
 import { AppComponent } from './app.component';
@@ -39,6 +40,7 @@ import { DetailsComponent } from './property/listing/details/details.component';
         })
     ],
     providers: [
+        UtilityService,
         PropertyService
     ],
     bootstrap: [AppComponent]
