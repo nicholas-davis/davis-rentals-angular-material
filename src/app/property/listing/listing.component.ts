@@ -1,5 +1,4 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { UtilityService } from '../../shared/utility.service';
 import { PropertyService } from '../property.service';
 import { Subscription }   from 'rxjs/Subscription';
 
@@ -14,7 +13,6 @@ export class ListingComponent implements OnInit, OnDestroy {
     propertySubscription: Subscription;
 
     constructor(
-        private sharedService: UtilityService,
         private propertyService: PropertyService
     ) { }
 
@@ -30,7 +28,8 @@ export class ListingComponent implements OnInit, OnDestroy {
     }
 
     viewDetails(data) {
-        this.sharedService.mapMarker.emit(data);
+       // console.log(data)
+
     }
 
 }

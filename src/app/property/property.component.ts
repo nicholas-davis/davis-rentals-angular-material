@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { UtilityService } from '../shared/utility.service';
 
 @Component({
@@ -10,13 +10,14 @@ import { UtilityService } from '../shared/utility.service';
 export class PropertyComponent implements OnInit {
     lat: number = 19.9281788;
     lng: number = -75.16583880000002;
-    zoom: number = 16;
+    zoom: number = 18;
 
     constructor(
         private sharedService: UtilityService
     ) {
         this.sharedService.mapMarker.subscribe((data: any) => {
-            data = data[0];
+            data = data;
+           console.log('property', data)
             this.lat = data.latitude;
             this.lng = data.longitude;
         });
@@ -24,4 +25,5 @@ export class PropertyComponent implements OnInit {
 
     ngOnInit() {
     }
+
 }

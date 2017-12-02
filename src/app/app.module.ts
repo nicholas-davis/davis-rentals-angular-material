@@ -8,6 +8,9 @@ import { MatToolbarModule, MatCardModule, MatButtonModule, MatIconModule} from '
 import { FlexLayoutModule} from "@angular/flex-layout";
 import { AgmCoreModule } from '@agm/core';
 
+//Modules
+import { DetailsModule } from "./property/listing/details/details.module";
+
 //Services
 import { PropertyService } from './property/property.service';
 import { UtilityService } from './shared/utility.service';
@@ -35,6 +38,7 @@ import { DetailsComponent } from './property/listing/details/details.component';
         MatIconModule,
         FlexLayoutModule,
         BrowserAnimationsModule,
+        DetailsModule,
         AgmCoreModule.forRoot({
             apiKey: 'AIzaSyBSnJiWUwA6Dt7qI8BzY9y_cTql_yLmEpE'
         })
