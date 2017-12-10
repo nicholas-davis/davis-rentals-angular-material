@@ -20,7 +20,7 @@ export class DetailsComponent implements OnInit, OnDestroy {
         private meta: Meta,
         private title: Title,
         private route: ActivatedRoute,
-        private sharedService: UtilityService,
+        private utilityService: UtilityService,
         private detailsService: DetailsService
     ) {
   
@@ -50,11 +50,12 @@ export class DetailsComponent implements OnInit, OnDestroy {
                     //property listing location
                     let coordinates = {
                         latitude: property.map.latitude,
-                        longitude: property.map.longitude
+                        longitude: property.map.longitude,
+                        zoom: property.map.zoom
                     };
 
                     //emit coordinates back to property component
-                    this.sharedService.mapMarker.emit(coordinates);
+                    this.utilityService.mapMarker.emit(coordinates);
                 }
             }
         });

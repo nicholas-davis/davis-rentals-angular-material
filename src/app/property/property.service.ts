@@ -8,7 +8,7 @@ export class PropertyService {
         private http: HttpClient
     ) { }
 
-    getProperty() {
+    getProperties() {
        return this.http.get('api/mock-property.json');
     }
 

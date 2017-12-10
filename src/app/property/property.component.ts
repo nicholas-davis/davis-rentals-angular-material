@@ -8,22 +8,22 @@ import { UtilityService } from '../shared/utility.service';
     host: { 'class': 'property' }
 })
 export class PropertyComponent implements OnInit {
-    lat: number = 19.9281788;
-    lng: number = -75.16583880000002;
-    zoom: number = 18;
+    latitude: number;
+    longitude: number;
+    zoom: number;
 
     constructor(
-        private sharedService: UtilityService
+        private utilityService: UtilityService
     ) {
-        this.sharedService.mapMarker.subscribe((data: any) => {
+        this.utilityService.mapMarker.subscribe((data: any) => {
             data = data;
-           console.log('property', data)
-            this.lat = data.latitude;
-            this.lng = data.longitude;
+            console.log('property', data)
+            this.latitude = data.latitude;
+            this.longitude = data.longitude;
+            this.zoom = data.zoom;
         });
     }
 
     ngOnInit() {
     }
-
 }
