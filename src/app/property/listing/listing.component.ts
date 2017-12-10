@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { PropertyService } from '../property.service';
 import { Subscription }   from 'rxjs/Subscription';
 import { UtilityService } from '../../shared/utility.service';
+import { PropertyService } from '../property.service';
 
 @Component({
     selector: 'app-listing',
@@ -38,12 +38,6 @@ export class ListingComponent implements OnInit, OnDestroy {
         this.properties = [];
         this.propertySubscription = this.propertyService.getProperties().subscribe(properties => {
             this.properties = properties
-            console.log(this.properties)
         });
     }
-
-    viewDetails(data) {
-        console.log('viewDetails', data)
-    }
-
 }

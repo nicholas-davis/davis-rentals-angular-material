@@ -1,9 +1,10 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from "@angular/router";
 import { Meta, Title } from '@angular/platform-browser';
+import { Subscription }   from 'rxjs/Subscription';
 import { UtilityService } from '../../../shared/utility.service';
 import { DetailsService } from './details.service';
-import { Subscription }   from 'rxjs/Subscription';
+
 
 @Component({
     selector: 'app-details',
@@ -23,7 +24,7 @@ export class DetailsComponent implements OnInit, OnDestroy {
         private utilityService: UtilityService,
         private detailsService: DetailsService
     ) {
-  
+        console.log(this)
         this.route.params.subscribe((params: any) => {
             this.propertyUrl = params.address;
         });
@@ -37,7 +38,10 @@ export class DetailsComponent implements OnInit, OnDestroy {
     }
 
     ngOnInit() {
+        this.getPropertyDetails();
+    }
 
+    getPropertyDetails() {
         this.propertyDetailsSubscription = this.detailsService.getPropertyDetails().subscribe(details => {
             this.propertyDetails = details['details'];
 
@@ -60,7 +64,6 @@ export class DetailsComponent implements OnInit, OnDestroy {
             }
         });
     }
-
     ngOnDestroy() {
         this.propertyDetailsSubscription.unsubscribe();
     }

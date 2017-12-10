@@ -4,17 +4,6 @@
       "url": "1327-s-colorado-st",
       "type": "Rental",
       "description": "Custom high end 2 bedroom 1.5 bath renovation at a great price! This beautiful home is on a tree-lined block surrounded by new construction homes and walkable to wonderful neighborhood amenities like coffee shops the American Sardine Bar and much more. This beautiful home offers wide plank hardwood floors throughout lots of natural light beautiful brand new brick fa~ade and large rear yard. The ultra-modern kitchen boasts a granite breakfast bar granite countertops tile backsplash and luxurious stainless steel appliance package. There is also a large finished basement that could be used as an additional living area with a half bath with beautiful tile floor recessed lighting and storage closet. Bedrooms are generously sized both with double closets and great light. The bathroom is absolutely stunning with designer fixtures perfect tile work and functional layout. Absolutely the perfect home!",
-      "address": {
-        "street": "1327 S Colorado St",
-        "city": "Philadelphia",
-        "state": "PA",
-        "zip": "19146"
-      },
-      "price": "$1,595",
-      "bed": "2",
-      "bath": "2",
-      "sqft": "1,300",
-      "walkscore": "92",
       "facts": [
         {
           "title": "",
@@ -78,24 +67,14 @@
       ],
       "map": {
         "latitude": 39.9340706,
-        "longitude": -75.17298449999998
+        "longitude": -75.17298449999998,
+        "zoom": 19
       }
     },
     {
       "url": "1245-pierce-st",
       "type": "Rental",
       "description": "",
-      "address": {
-        "street": "1244 Pierce St",
-        "city": "Philadelphia",
-        "state": "PA",
-        "zip": "19148"
-      },
-      "price": "$1,595",
-      "bed": "2",
-      "bath": "2",
-      "sqft": "1,300",
-      "walkscore": "92",
       "facts": [
         {
           "title": "",
@@ -159,7 +138,8 @@
       ],
       "map": {
         "latitude": 39.92817879999999,
-        "longitude": -75.16583880000002
+        "longitude": -75.16583880000002,
+        "zoom": 19
       }
     }
   ]

@@ -22,12 +22,7 @@
           "title": "",
           "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_01.jpg"
         }
-      ],
-      "map": {
-        "latitude": 39.9340706,
-        "longitude": -75.17298449999998,
-        "zoom":  16
-      }
+      ]
     },
     {
       "url": "1245-pierce-st",
@@ -51,12 +46,7 @@
           "title": "",
           "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_01.jpg"
         }
-      ],
-      "map": {
-        "latitude": 39.9340706,
-        "longitude": -75.17298449999998,
-        "zoom": 16
-      }
+      ]
     }
   ]
 }
