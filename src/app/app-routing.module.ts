@@ -5,6 +5,8 @@ import { PropertyComponent } from './property/property.component';
 import { ListingComponent } from './property/listing/listing.component';
 import { DetailsComponent } from './property/listing/details/details.component';
 
+import { DetailsResolve } from './property/listing/details/details.resolve';
+
 const routes: Routes = [
     {
         path: '',
@@ -21,7 +23,10 @@ const routes: Routes = [
             },
             {
                 path: 'listing/:address',
-                component: DetailsComponent
+                component: DetailsComponent,
+                resolve: {
+                    DetailsResolve
+                }
             }
         ]
     }
@@ -30,6 +35,9 @@ const routes: Routes = [
 
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
+    exports: [RouterModule],
+    providers: [
+        DetailsResolve
+    ]
 })
 export class AppRoutingModule { }

@@ -9,7 +9,7 @@ export class DetailsService {
     ) { }
 
     getPropertyDetails() {
-        return this.http.get('api/mock-property-details.json');
+        return this.http.get('api/mock-property-details.json').toPromise();
     }
 
 }

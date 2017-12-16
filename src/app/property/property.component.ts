@@ -11,19 +11,14 @@ export class PropertyComponent implements OnInit {
     latitude: number;
     longitude: number;
     zoom: number;
+    map: object
 
     constructor(
         private utilityService: UtilityService
-    ) {
-        this.utilityService.mapMarker.subscribe((data: any) => {
-            data = data;
-            console.log('property', data)
-            this.latitude = data.latitude;
-            this.longitude = data.longitude;
-            this.zoom = data.zoom;
-        });
-    }
+    ) {}
 
     ngOnInit() {
+        this.utilityService.defaultMapMarker.subscribe(map => this.map = map);
+        console.log('parent - property', this)
     }
 }
