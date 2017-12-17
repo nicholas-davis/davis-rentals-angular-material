@@ -11,7 +11,7 @@ import { PropertyService } from '../property.service';
 export class ListingComponent implements OnInit, OnDestroy {
 
     properties: any;
-    propertySubscription: Subscription;
+    propertiesSubscription: Subscription;
     map: object;
 
     constructor(
@@ -22,14 +22,15 @@ export class ListingComponent implements OnInit, OnDestroy {
     ngOnInit() {
         this.utilityService.defaultMapMarker.subscribe(map => this.map = map);
         this.getProperties();
+        console.log('child - listing', this)
     }
 
     ngOnDestroy() {
-        this.propertySubscription.unsubscribe();
+        this.propertiesSubscription.unsubscribe();
     }
 
     getProperties() {
         this.properties = [];
-        this.propertySubscription = this.propertyService.getProperties().subscribe(properties => this.properties = properties);
+        this.propertiesSubscription = this.propertyService.getProperties().subscribe(properties => this.properties = properties);
     }
 }

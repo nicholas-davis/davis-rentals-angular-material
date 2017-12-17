@@ -28,12 +28,12 @@ export class DetailsComponent implements OnInit, AfterViewInit  {
 
     ngOnInit() {
         this.propertyDetails = this.route.snapshot.data
-        
+        this.emitMapCoordinates();
         console.log('details - child', this)
     }
 
     ngAfterViewInit() {
-        this.emitMapCoordinates();
+       
     }
 
     emitMapCoordinates() {
