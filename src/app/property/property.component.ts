@@ -20,7 +20,7 @@ export class PropertyComponent implements OnInit, OnDestroy {
         private utilityService: UtilityService
     ) {}
 
-    ngOnInit() {
+    ngOnInit()  {
         this.mapSubscription = this.utilityService.defaultMapMarker.subscribe(map => this.map = map);
         console.log('parent - property', this)
     }

@@ -29,7 +29,7 @@ export class DetailsComponent implements OnInit, AfterViewInit  {
     ngOnInit() {
         this.propertyDetails = this.route.snapshot.data
         this.emitMapCoordinates();
-        console.log('details - child', this)
+        //console.log('details - child', this)
     }
 
     ngAfterViewInit() {
@@ -47,6 +47,6 @@ export class DetailsComponent implements OnInit, AfterViewInit  {
         };
 
         //update map in parent
-        return this.utilityService.onUpdateMapMarker(coordinates)
+        return this.utilityService.onUpdateMapMarker(coordinates);
     }
 }

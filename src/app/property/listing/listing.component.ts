@@ -20,7 +20,6 @@ export class ListingComponent implements OnInit, OnDestroy {
     ) {}
 
     ngOnInit() {
-        this.utilityService.defaultMapMarker.subscribe(map => this.map = map);
         this.getProperties();
         console.log('child - listing', this)
     }
