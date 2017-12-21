@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { UtilityService } from '../../../shared/utility.service';
 
@@ -27,21 +27,21 @@ export class DetailsComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.propertyDetails = this.route.snapshot.data
+        this.propertyDetails = this.route.snapshot.data;
         this.emitNewMapCoordinates();
     }
 
     emitNewMapCoordinates() {
-        let map = this.propertyDetails.DetailsResolve.map;
-        console.log(this.propertyDetails.DetailsResolve)
-        //property listing location
-        let coordinates = {
+        const map = this.propertyDetails.DetailsResolve.map;
+
+        // property listing location
+        const coordinates = {
             latitude: map.latitude,
             longitude: map.longitude,
             zoom: map.zoom
         };
 
-        //emit new map coordinates
-        return this.utilityService.onUpdateMapMarker(coordinates);        
+        // emit new map coordinates
+        return this.utilityService.onUpdateMapMarker(coordinates);
     }
 }

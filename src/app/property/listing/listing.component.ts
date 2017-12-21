@@ -13,7 +13,7 @@ export class ListingComponent implements OnInit, OnDestroy {
     properties: any;
     propertiesSubscription: Subscription;
     map: object;
-    mapSubscription: Subscription
+    mapSubscription: Subscription;
 
     constructor(
         private utilityService: UtilityService,
@@ -21,13 +21,13 @@ export class ListingComponent implements OnInit, OnDestroy {
     ) { }
 
     ngOnInit() {
-        //listing all properties 
+        // listing all properties
         this.getProperties();
-        
-        //Set default map coordinates
+
+        // Set default map coordinates
         this.defaultMapCoordinates();
 
-        //Subscribe to latest map coordinates 
+        // Subscribe to latest map coordinates
         this.mapSubscription = this.utilityService.defaultMapMarker.subscribe((map: object) => this.map = map);
     }
 
@@ -37,13 +37,13 @@ export class ListingComponent implements OnInit, OnDestroy {
     }
 
     defaultMapCoordinates() {
-        let defaultMapCoordinates = {
+        const defaultMapCoordinates = {
             latitude: 39.9525839,
             longitude: -75.16522150000003,
             zoom: 16
         };
 
-        //emit new map coordinates
+        // emit new map coordinates
         return this.utilityService.onUpdateMapMarker(defaultMapCoordinates);
     }
 

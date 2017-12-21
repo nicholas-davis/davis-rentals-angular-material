@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-//Services
+// Services
 import { PropertyService } from '../property.service';
 
 @NgModule({

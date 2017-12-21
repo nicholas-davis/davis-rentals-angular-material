@@ -14,15 +14,15 @@ export class DetailsResolve implements Resolve<any> {
     ) { }
 
     resolve(route: ActivatedRouteSnapshot) {
-        let propertyUrl = route.params.address;
+        const propertyUrl = route.params.address;
 
         return this.detailsService.getPropertyDetails().then(details => {
-            let propertyDetails = details['properties'];
+            const propertyDetails = details['properties'];
 
             for (let index = 0, len = propertyDetails.length; index < len; index++) {
-                let property = propertyDetails[index];
+                const property = propertyDetails[index];
 
-                //check which property listing 
+                // check which property listing
                 if (property.url === propertyUrl) {
                     this.propertyDetails = property;
                 }
