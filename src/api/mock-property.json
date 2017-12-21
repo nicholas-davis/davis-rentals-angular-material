@@ -4,7 +4,8 @@
       "url": "1327-s-colorado-st",
       "type": "Rental",
       "description": {
-        "short": "Custom high end 2 bedroom 1.5 bath renovation at a great price! This beautiful home is on a tree-lined block surrounded by new construction homes and walkable to wonderful neighborhood amenities like coffee shops the American Sardine Bar and much more."
+        "short": "Custom high end 2 bedroom 1.5 bath renovation at a great price! This beautiful home is on a tree-lined block surrounded by new construction homes and walkable to wonderful neighborhood amenities like coffee shops the American Sardine Bar and much more.",
+        "long": "Custom high end 2 bedroom 1.5 bath renovation at a great price! This beautiful home is on a tree-lined block surrounded by new construction homes and walkable to wonderful neighborhood amenities like coffee shops the American Sardine Bar and much more. This beautiful home offers wide plank hardwood floors throughout lots of natural light beautiful brand new brick fa~ade and large rear yard. The ultra-modern kitchen boasts a granite breakfast bar granite countertops tile backsplash and luxurious stainless steel appliance package. There is also a large finished basement that could be used as an additional living area with a half bath with beautiful tile floor recessed lighting and storage closet. Bedrooms are generously sized both with double closets and great light. The bathroom is absolutely stunning with designer fixtures perfect tile work and functional layout. Absolutely the perfect home!"
       },
       "address": {
         "street": "1327 S Colorado St",
@@ -22,13 +23,77 @@
           "title": "",
           "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_01.jpg"
         }
-      ]
+      ],
+      "facts": [
+        {
+          "title": "",
+          "description": "",
+          "icon": "",
+          "list": [
+            "",
+            ""
+          ]
+        }
+      ],
+      "features": [
+        {
+          "title": "ADT Security System",
+          "description": "Feel safe with a FREE ADT Security System (included in the lease). Plus, ADT Security System works with nest",
+          "icon": ""
+        },
+        {
+          "title": "nest",
+          "description": "nest is a home automation producer of programmable, self-learning, sensor-driven, Wi-Fi-enabled thermostats, smoke detectors, and other security systems. nest will save you $$$ annually.",
+          "icon": ""
+        },
+        {
+          "title": "Pets",
+          "description": "Pets are allow (i.e. cats, birds, rabbits or other). Dogs are prohibited.",
+          "icon": ""
+        },
+        {
+          "title": "Verizon Fios",
+          "description": "Cable-ready Verizon Fios (not included in the lease). Unreal Speed, faster downloads, better Streaming Highest Speeds on the Market.",
+          "icon": ""
+        },
+        {
+          "title": "Washer and Dryer",
+          "description": "Maxima 4.5 cu. ft. High-Efficiency Front Load Washer in White, ENERGY STAR - Best Cleaning in the Industry Enabled by the PowerWash� Cycle3 Maxima 7.3 cu. ft. Gas Dryer with Steam in White - Give your outfit a quick touch-up and reduce wrinkles and odors with this front load dryer's Refresh cycle with Steam.",
+          "icon": ""
+        },
+        {
+          "title": "Storage",
+          "description": "Not only 2 generously sized bedrooms, but there's more storage in the finished basement.",
+          "icon": ""
+        },
+        {
+          "title": "Nearby Restaurants",
+          "description": "Neighborhood amenities: coffee shops, American Sardine Bar, Rosario's Pizzeria, The Sidecar Bar & Grille, Circles Contemporary Asian, South Philadelphia Tap Room and so much more!",
+          "icon": ""
+        },
+        {
+          "title": "Central Air",
+          "description": "Stay cool with Central Air.",
+          "icon": ""
+        }
+      ],
+      "amenities": [
+        {
+          "": ""
+        }
+      ],
+      "map": {
+        "latitude": 39.9340706,
+        "longitude": -75.17298449999998,
+        "zoom": 19
+      }
     },
     {
       "url": "1245-pierce-st",
       "type": "Rental",
       "description": {
-        "short": "Custom high end 2 bedroom 1.5 bath renovation at a great price! This beautiful home is on a tree-lined block surrounded by new construction homes and walkable to wonderful neighborhood amenities like coffee shops the American Sardine Bar and much more."
+        "short": " YESSSS !! Custom high end 2 bedroom 1.5 bath renovation at a great price! This beautiful home is on a tree-lined block surrounded by new construction homes and walkable to wonderful neighborhood amenities like coffee shops the American Sardine Bar and much more.",
+        "long": ""
       },
       "address": {
         "street": "1245 Pierce St",
@@ -46,7 +111,70 @@
           "title": "",
           "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_01.jpg"
         }
-      ]
+      ],
+      "facts": [
+        {
+          "title": "",
+          "description": "",
+          "icon": "",
+          "list": [
+            "",
+            ""
+          ]
+        }
+      ],
+      "features": [
+        {
+          "title": "ADT Security System",
+          "description": "Feel safe with a FREE ADT Security System (included in the lease). Plus, ADT Security System works with nest",
+          "icon": ""
+        },
+        {
+          "title": "nest",
+          "description": "nest is a home automation producer of programmable, self-learning, sensor-driven, Wi-Fi-enabled thermostats, smoke detectors, and other security systems. nest will save you $$$ annually.",
+          "icon": ""
+        },
+        {
+          "title": "Pets",
+          "description": "Pets are allow (i.e. cats, birds, rabbits or other). Dogs are prohibited.",
+          "icon": ""
+        },
+        {
+          "title": "Verizon Fios",
+          "description": "Cable-ready Verizon Fios (not included in the lease). Unreal Speed, faster downloads, better Streaming Highest Speeds on the Market.",
+          "icon": ""
+        },
+        {
+          "title": "Washer and Dryer",
+          "description": "Maxima 4.5 cu. ft. High-Efficiency Front Load Washer in White, ENERGY STAR - Best Cleaning in the Industry Enabled by the PowerWash� Cycle3 Maxima 7.3 cu. ft. Gas Dryer with Steam in White - Give your outfit a quick touch-up and reduce wrinkles and odors with this front load dryer's Refresh cycle with Steam.",
+          "icon": ""
+        },
+        {
+          "title": "Storage",
+          "description": "Not only 2 generously sized bedrooms, but there's more storage in the finished basement.",
+          "icon": ""
+        },
+        {
+          "title": "Nearby Restaurants",
+          "description": "Neighborhood amenities: coffee shops, American Sardine Bar, Rosario's Pizzeria, The Sidecar Bar & Grille, Circles Contemporary Asian, South Philadelphia Tap Room and so much more!",
+          "icon": ""
+        },
+        {
+          "title": "Central Air",
+          "description": "Stay cool with Central Air.",
+          "icon": ""
+        }
+      ],
+      "amenities": [
+        {
+          "": ""
+        }
+      ],
+      "map": {
+        "latitude": 39.92817879999999,
+        "longitude": -75.16583880000002,
+        "zoom": 19
+      }
     }
   ]
 }

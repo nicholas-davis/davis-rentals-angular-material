@@ -17,7 +17,7 @@ export class DetailsResolve implements Resolve<any> {
         let propertyUrl = route.params.address;
 
         return this.detailsService.getPropertyDetails().then(details => {
-            let propertyDetails = details['details'];
+            let propertyDetails = details['properties'];
 
             for (let index = 0, len = propertyDetails.length; index < len; index++) {
                 let property = propertyDetails[index];

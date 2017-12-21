@@ -33,7 +33,7 @@ export class DetailsComponent implements OnInit {
 
     emitNewMapCoordinates() {
         let map = this.propertyDetails.DetailsResolve.map;
-
+        console.log(this.propertyDetails.DetailsResolve)
         //property listing location
         let coordinates = {
             latitude: map.latitude,
