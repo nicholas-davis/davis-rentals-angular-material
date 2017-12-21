@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from "@angular/router";
 import { Meta, Title } from '@angular/platform-browser';
 import { UtilityService } from '../../../shared/utility.service';
@@ -8,7 +8,7 @@ import { UtilityService } from '../../../shared/utility.service';
     templateUrl: './details.component.html',
     styleUrls: ['./details.component.sass']
 })
-export class DetailsComponent implements OnInit, AfterViewInit  {
+export class DetailsComponent implements OnInit {
 
     propertyDetails: any;
 
@@ -28,15 +28,10 @@ export class DetailsComponent implements OnInit, AfterViewInit  {
 
     ngOnInit() {
         this.propertyDetails = this.route.snapshot.data
-        this.emitMapCoordinates();
-        //console.log('details - child', this)
+        this.emitNewMapCoordinates();
     }
 
-    ngAfterViewInit() {
-       
-    }
-
-    emitMapCoordinates() {
+    emitNewMapCoordinates() {
         let map = this.propertyDetails.DetailsResolve.map;
 
         //property listing location
@@ -46,7 +41,7 @@ export class DetailsComponent implements OnInit, AfterViewInit  {
             zoom: map.zoom
         };
 
-        //update map in parent
-        return this.utilityService.onUpdateMapMarker(coordinates);
+        //emit new map coordinates
+        return this.utilityService.onUpdateMapMarker(coordinates);        
     }
 }

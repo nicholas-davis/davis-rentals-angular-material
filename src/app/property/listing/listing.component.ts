@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Subscription }   from 'rxjs/Subscription';
+import { Subscription } from 'rxjs/Subscription';
 import { UtilityService } from '../../shared/utility.service';
 import { PropertyService } from '../property.service';
 
@@ -13,19 +13,38 @@ export class ListingComponent implements OnInit, OnDestroy {
     properties: any;
     propertiesSubscription: Subscription;
     map: object;
+    mapSubscription: Subscription
 
     constructor(
         private utilityService: UtilityService,
         private propertyService: PropertyService
-    ) {}
+    ) { }
 
     ngOnInit() {
+        //listing all properties 
         this.getProperties();
-        console.log('child - listing', this)
+        
+        //Set default map coordinates
+        this.defaultMapCoordinates();
+
+        //Subscribe to latest map coordinates 
+        this.mapSubscription = this.utilityService.defaultMapMarker.subscribe((map: object) => this.map = map);
     }
 
     ngOnDestroy() {
         this.propertiesSubscription.unsubscribe();
+        this.mapSubscription.unsubscribe();
+    }
+
+    defaultMapCoordinates() {
+        let defaultMapCoordinates = {
+            latitude: 39.9525839,
+            longitude: -75.16522150000003,
+            zoom: 16
+        };
+
+        //emit new map coordinates
+        return this.utilityService.onUpdateMapMarker(defaultMapCoordinates);
     }
 
     getProperties() {
