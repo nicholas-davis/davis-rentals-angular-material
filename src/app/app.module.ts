@@ -9,10 +9,10 @@ import { FlexLayoutModule} from "@angular/flex-layout";
 import { AgmCoreModule } from '@agm/core';
 
 //Modules
+import { ListingModule } from "./property/listing/listing.module";
 import { DetailsModule } from "./property/listing/details/details.module";
 
 //Services
-import { PropertyService } from './property/property.service';
 import { UtilityService } from './shared/utility.service';
 
 //Components
@@ -39,13 +39,13 @@ import { DetailsComponent } from './property/listing/details/details.component';
         FlexLayoutModule,
         BrowserAnimationsModule,
         DetailsModule,
+        ListingModule,
         AgmCoreModule.forRoot({
             apiKey: 'AIzaSyBSnJiWUwA6Dt7qI8BzY9y_cTql_yLmEpE'
         })
     ],
     providers: [
-        UtilityService,
-        PropertyService
+        UtilityService
     ],
     bootstrap: [AppComponent]
 })
