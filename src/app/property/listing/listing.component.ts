@@ -24,6 +24,9 @@ export class ListingComponent implements OnInit, OnDestroy {
         // listing all properties
         this.getProperties();
 
+        // Set dafault sidebar width
+        this.defaultSidebarWidth();
+
         // Set default map coordinates
         this.defaultMapCoordinates();
 
@@ -34,6 +37,11 @@ export class ListingComponent implements OnInit, OnDestroy {
     ngOnDestroy() {
         this.propertiesSubscription.unsubscribe();
         this.mapSubscription.unsubscribe();
+    }
+
+    defaultSidebarWidth() {
+        const width = 30;
+        return this.utilityService.onChangeSidebarWidth(width);
     }
 
     defaultMapCoordinates() {

@@ -12,6 +12,8 @@ export class PropertyComponent implements OnInit, OnDestroy {
 
     map: object;
     mapSubscription: Subscription;
+    sidebarWidth: number;
+    sidebarWidthSubscription: Subscription;
 
     constructor(
         private utilityService: UtilityService,
@@ -19,17 +21,23 @@ export class PropertyComponent implements OnInit, OnDestroy {
     ) { }
 
     ngOnInit() {
+        this.sidebar();
         this.mapCoordinates();
     }
 
+    sidebar() {
+        this.utilityService.defaultSidebarSize.subscribe((width: number) => this.sidebarWidth = width);
+    }
+
     mapCoordinates() {
-        return this.mapSubscription = this.utilityService.defaultMapMarker.subscribe(map => {
+        return this.mapSubscription = this.utilityService.defaultMapMarker.subscribe((map: object) => {
             this.map = map;
             this.changeDetectorRef.detectChanges();
         });
     }
 
     ngOnDestroy() {
+        this.sidebarWidthSubscription.unsubscribe();
         this.mapSubscription.unsubscribe();
     }
 }

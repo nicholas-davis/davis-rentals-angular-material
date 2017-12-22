@@ -3,6 +3,6 @@
         <agm-marker [latitude]="map.latitude" [longitude]="map.longitude"></agm-marker>
     </agm-map>
 </div>
-<div class="property__sidenav mat-elevation-z10" fxFlex="30" fxLayout fxFill>
+<div class="property__sidenav mat-elevation-z10" [fxFlex]="sidebarWidth" fxLayout fxFill>
     <router-outlet></router-outlet>
 </div>

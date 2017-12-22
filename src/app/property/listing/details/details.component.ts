@@ -28,7 +28,13 @@ export class DetailsComponent implements OnInit {
 
     ngOnInit() {
         this.propertyDetails = this.route.snapshot.data;
+        this.emitNewSidebarWidth();
         this.emitNewMapCoordinates();
+    }
+
+    emitNewSidebarWidth() {
+        const width = 50;
+        return this.utilityService.onChangeSidebarWidth(width);
     }
 
     emitNewMapCoordinates() {
