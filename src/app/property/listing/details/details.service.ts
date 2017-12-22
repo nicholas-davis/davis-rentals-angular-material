@@ -11,5 +11,4 @@ export class DetailsService {
     getPropertyDetails() {
         return this.http.get('api/mock-property.json').toPromise();
     }
-
 }

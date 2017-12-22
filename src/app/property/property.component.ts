@@ -1,14 +1,14 @@
-import { Component, OnInit, OnDestroy, OnChanges, ChangeDetectorRef } from '@angular/core';
+import { Component, HostBinding, OnInit, OnDestroy, OnChanges, ChangeDetectorRef } from '@angular/core';
 import { Subscription } from 'rxjs/Subscription';
 import { UtilityService } from '../shared/utility.service';
 
 @Component({
     selector: 'app-property',
     templateUrl: './property.component.html',
-    styleUrls: ['./property.component.scss'],
-    host: { 'class': 'property' }
+    styleUrls: ['./property.component.scss']
 })
 export class PropertyComponent implements OnInit, OnDestroy {
+    @HostBinding('attr.class') class = 'property';
 
     map: object;
     mapSubscription: Subscription;

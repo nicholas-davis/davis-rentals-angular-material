@@ -5,17 +5,17 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 
 import { MatToolbarModule, MatCardModule, MatButtonModule, MatIconModule} from '@angular/material';
-import { FlexLayoutModule} from "@angular/flex-layout";
+import { FlexLayoutModule} from '@angular/flex-layout';
 import { AgmCoreModule } from '@agm/core';
 
-//Modules
-import { ListingModule } from "./property/listing/listing.module";
-import { DetailsModule } from "./property/listing/details/details.module";
+// Modules
+import { ListingModule } from './property/listing/listing.module';
+import { DetailsModule } from './property/listing/details/details.module';
 
-//Services
+// Services
 import { UtilityService } from './shared/utility.service';
 
-//Components
+// Components
 import { AppComponent } from './app.component';
 import { PropertyComponent } from './property/property.component';
 import { ListingComponent } from './property/listing/listing.component';
