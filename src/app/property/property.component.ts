@@ -13,7 +13,7 @@ export class PropertyComponent implements OnInit, OnDestroy {
     map: object;
     mapSubscription: Subscription;
     structure: object;
-    sidebarWidthSubscription: Subscription;
+    structureSubscription: Subscription;
 
     constructor(
         private utilityService: UtilityService,
@@ -26,7 +26,8 @@ export class PropertyComponent implements OnInit, OnDestroy {
     }
 
     layout() {
-        this.utilityService.defaultLayout.subscribe((structure: object) => this.structure = structure);
+        return this.structureSubscription = this.utilityService.defaultLayout
+            .subscribe((structure: object) => this.structure = structure);
     }
 
     mapCoordinates() {
@@ -37,7 +38,7 @@ export class PropertyComponent implements OnInit, OnDestroy {
     }
 
     ngOnDestroy() {
-        this.sidebarWidthSubscription.unsubscribe();
+        this.structureSubscription.unsubscribe();
         this.mapSubscription.unsubscribe();
     }
 }
