@@ -16,7 +16,7 @@ export class DetailsComponent implements OnInit {
         private meta: Meta,
         private title: Title,
         private route: ActivatedRoute,
-        private utilityService: UtilityService
+        private utilityService: UtilityService,
     ) {
         title.setTitle('Davis');
         meta.addTags([
@@ -28,13 +28,17 @@ export class DetailsComponent implements OnInit {
 
     ngOnInit() {
         this.propertyDetails = this.route.snapshot.data;
-        this.emitNewSidebarWidth();
+        this.emitNewLayout();
         this.emitNewMapCoordinates();
     }
 
-    emitNewSidebarWidth() {
-        const width = 50;
-        return this.utilityService.onChangeSidebarWidth(width);
+    emitNewLayout() {
+        const layout = {
+            mapWidth: 50,
+            sidebarWidth: 50
+        };
+
+        return this.utilityService.onChangeLayout(layout);
     }
 
     emitNewMapCoordinates() {

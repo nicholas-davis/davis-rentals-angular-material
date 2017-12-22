@@ -3,8 +3,8 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 @Injectable()
 export class UtilityService {
-    private sidebar = new BehaviorSubject<number>(30);
-    defaultSidebarSize = this.sidebar.asObservable();
+    private layout = new BehaviorSubject<object>({});
+    defaultLayout = this.layout.asObservable();
 
     private mapMarker = new BehaviorSubject<object>({});
     defaultMapMarker = this.mapMarker.asObservable();
@@ -13,7 +13,7 @@ export class UtilityService {
         this.mapMarker.next(coordinates);
     }
 
-    onChangeSidebarWidth(width: number) {
-        this.sidebar.next(width);
+    onChangeLayout(structure: object) {
+        this.layout.next(structure);
     }
 }

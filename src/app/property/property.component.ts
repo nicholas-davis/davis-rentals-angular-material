@@ -12,7 +12,7 @@ export class PropertyComponent implements OnInit, OnDestroy {
 
     map: object;
     mapSubscription: Subscription;
-    sidebarWidth: number;
+    structure: object;
     sidebarWidthSubscription: Subscription;
 
     constructor(
@@ -21,12 +21,12 @@ export class PropertyComponent implements OnInit, OnDestroy {
     ) { }
 
     ngOnInit() {
-        this.sidebar();
+        this.layout();
         this.mapCoordinates();
     }
 
-    sidebar() {
-        this.utilityService.defaultSidebarSize.subscribe((width: number) => this.sidebarWidth = width);
+    layout() {
+        this.utilityService.defaultLayout.subscribe((structure: object) => this.structure = structure);
     }
 
     mapCoordinates() {
