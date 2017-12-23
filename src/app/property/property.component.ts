@@ -1,6 +1,7 @@
-import { Component, HostBinding, OnInit, OnDestroy, OnChanges, ChangeDetectorRef } from '@angular/core';
+import { Component, HostBinding, ViewChild, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
 import { Subscription } from 'rxjs/Subscription';
 import { UtilityService } from '../shared/utility.service';
+import { AgmMap } from '@agm/core/directives/map';
 
 @Component({
     selector: 'app-property',
@@ -9,6 +10,7 @@ import { UtilityService } from '../shared/utility.service';
 })
 export class PropertyComponent implements OnInit, OnDestroy {
     @HostBinding('attr.class') class = 'property';
+    @ViewChild(AgmMap) agmMap: AgmMap;
 
     map: object;
     mapSubscription: Subscription;
@@ -33,6 +35,7 @@ export class PropertyComponent implements OnInit, OnDestroy {
     mapCoordinates() {
         return this.mapSubscription = this.utilityService.defaultMapMarker.subscribe((map: object) => {
             this.map = map;
+            this.agmMap.triggerResize();
             this.changeDetectorRef.detectChanges();
         });
     }
