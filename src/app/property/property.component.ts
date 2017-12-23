@@ -1,4 +1,4 @@
-import { Component, HostBinding, ViewChild, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
+import { Component, HostBinding, ViewChild, OnInit, OnDestroy, ChangeDetectorRef, ViewEncapsulation } from '@angular/core';
 import { Subscription } from 'rxjs/Subscription';
 import { UtilityService } from '../shared/utility.service';
 import { AgmMap } from '@agm/core/directives/map';
@@ -6,7 +6,8 @@ import { AgmMap } from '@agm/core/directives/map';
 @Component({
     selector: 'app-property',
     templateUrl: './property.component.html',
-    styleUrls: ['./property.component.scss']
+    styleUrls: ['./property.component.scss'],
+    encapsulation: ViewEncapsulation.None
 })
 export class PropertyComponent implements OnInit, OnDestroy {
     @HostBinding('attr.class') class = 'property';

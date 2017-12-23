@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { UtilityService } from '../../../shared/utility.service';
@@ -6,11 +6,14 @@ import { UtilityService } from '../../../shared/utility.service';
 @Component({
     selector: 'app-details',
     templateUrl: './details.component.html',
-    styleUrls: ['./details.component.sass']
+    styleUrls: ['./details.component.scss'],
+    encapsulation: ViewEncapsulation.None
 })
 export class DetailsComponent implements OnInit {
+    @HostBinding('attr.class') class = 'details';
 
     propertyDetails: any;
+    tiles: any;
 
     constructor(
         private meta: Meta,
@@ -27,9 +30,16 @@ export class DetailsComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.propertyDetails = this.route.snapshot.data;
+        this.propertyDetails = this.route.snapshot.data.DetailsResolve;
         this.emitNewLayout();
         this.emitNewMapCoordinates();
+
+        this.tiles = [
+            {text: 'One', cols: 3, rows: 1, color: 'lightblue'},
+            {text: 'Two', cols: 1, rows: 2, color: 'lightgreen'},
+            {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+            {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
+          ];
     }
 
     emitNewLayout() {
@@ -42,7 +52,7 @@ export class DetailsComponent implements OnInit {
     }
 
     emitNewMapCoordinates() {
-        const map = this.propertyDetails.DetailsResolve.map;
+        const map = this.propertyDetails.map;
 
         // property listing location
         const coordinates = {

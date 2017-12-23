@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
 import { Subscription } from 'rxjs/Subscription';
 import { UtilityService } from '../../shared/utility.service';
 import { PropertyService } from '../property.service';
@@ -6,7 +6,8 @@ import { PropertyService } from '../property.service';
 @Component({
     selector: 'app-listing',
     templateUrl: './listing.component.html',
-    styleUrls: ['./listing.component.scss']
+    styleUrls: ['./listing.component.scss'],
+    encapsulation: ViewEncapsulation.None
 })
 export class ListingComponent implements OnInit, OnDestroy {
 
