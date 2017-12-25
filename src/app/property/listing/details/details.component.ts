@@ -35,17 +35,17 @@ export class DetailsComponent implements OnInit {
         this.emitNewMapCoordinates();
 
         this.tiles = [
-            {text: 'One', cols: 3, rows: 1, color: 'lightblue'},
-            {text: 'Two', cols: 1, rows: 2, color: 'lightgreen'},
+           
+            {text: 'Two', cols: 2, rows: 2, color: 'lightgreen'},
             {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
-            {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
+            {text: 'Four', cols: 1, rows: 1, color: '#DDBDF1'},
           ];
     }
 
     emitNewLayout() {
         const layout = {
-            mapWidth: 50,
-            sidebarWidth: 50
+            mapWidth: 40,
+            sidebarWidth: 60
         };
 
         return this.utilityService.onChangeLayout(layout);
