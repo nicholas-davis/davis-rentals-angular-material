@@ -1,6 +1,12 @@
 <div [fxFlex]="structure.mapWidth" fxLayout fxFill>
     <agm-map class="property__map" [latitude]="map.latitude" [longitude]="map.longitude" [zoom]="map.zoom" [usePanning]="true">
-        <agm-marker *ngFor="let map of map.properties" [latitude]="map.latitude" [longitude]="map.longitude"></agm-marker>
+        <div *ngIf="map.properties; then primaryBlock; else secondaryBlock">this is ignored</div>
+        <ng-template #primaryBlock>
+            <agm-marker *ngFor="let map of map.properties" [latitude]="map.latitude" [longitude]="map.longitude"></agm-marker>
+        </ng-template>
+        <ng-template #secondaryBlock>
+            <agm-marker [latitude]="map.latitude" [longitude]="map.longitude"></agm-marker>
+        </ng-template>
     </agm-map>
 </div>
 <div class="property__sidenav mat-elevation-z10" [fxFlex]="structure.sidebarWidth" fxLayout fxFill>
