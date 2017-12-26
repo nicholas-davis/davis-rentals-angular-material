@@ -18,10 +18,204 @@
       "bath": "2",
       "sqft": "1,300",
       "walkscore": "92",
-      "image": [
+      "images": [
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_09.jpg",
+          "cols": 2,
+          "rows": 2
+        },
         {
           "title": "",
-          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_01.jpg"
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_02.jpg",
+          "cols": 1,
+          "rows": 1
+        },
+        {
+          "title": "",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_03.jpg",
+          "cols": 1,
+          "rows": 1
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_04.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_05.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_06.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_07.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_08.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_10.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_11.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_12.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_13.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_14.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_15.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_16.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_17.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_18.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_19.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_20.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_21.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_22.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_23.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_24.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_25.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_26.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_27.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_28.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_29.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_30.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_31.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_32.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_33.jpg",
+          "cols": 2,
+          "rows": 2
+        },
+        {
+          "title": "1327 S Colorado St Philadelphia PA 19146",
+          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_34.jpg",
+          "cols": 2,
+          "rows": 2
         }
       ],
       "features": [
