@@ -1,7 +1,7 @@
 <section class="mat-typography" fxLayout="column">
     <div fxLayout>
         <div fxFlex="50">
-            <h1>{{propertyDetails.price}} / mo.</h1>
+            <button mat-raised-button color="primary" [routerLink]="['/']">Apply Today!</button>
         </div>
         <div fxFlex="50" fxLayoutAlign="end">
             <button mat-icon-button [routerLink]="['/']">
@@ -14,50 +14,60 @@
             {{tile.text}}
         </mat-grid-tile>
     </mat-grid-list>
-    <div fxLayout>
-        <div fxFlex="60">
-            <h2>{{propertyDetails.address.street}}
-                <br/> {{propertyDetails.address.city}} {{propertyDetails.address.state}} {{propertyDetails.address.zip}}</h2>
-            <mat-list fxLayout>
-                <mat-list-item fxFlex="20">
-                    <mat-icon matListIcon>hotel</mat-icon>
-                    <h4 class="listing__icon-title" matLine>{{propertyDetails.bed}} beds</h4>
-                </mat-list-item>
-                <mat-list-item fxFlex="20">
-                    <mat-icon matListIcon>hot_tub</mat-icon>
-                    <h4 class="listing__icon-title" matLine>{{propertyDetails.bath}} bath</h4>
-                </mat-list-item>
-                <mat-list-item fxFlex="20">
-                    <mat-icon matListIcon>view_compact</mat-icon>
-                    <h4 class="listing__icon-title" matLine>{{propertyDetails.sqft}} sqft.</h4>
-                </mat-list-item>
-                <mat-list-item fxFlex>
-                    <mat-icon matListIcon>directions_walk</mat-icon>
-                    <h4 class="listing__icon-title" matLine>{{propertyDetails.walkscore}} (Walker's Paradise)</h4>
-                </mat-list-item>
-            </mat-list>
-            <p class="mat-body">{{propertyDetails.description.long}}</p>
-            <div fxLayout>
-                <div fxFlex="50">
-                    <mat-list>
-                        <mat-list-item *ngFor="let feature of propertyDetails.features | slice:0:4">
-                            <mat-icon mat-list-icon>folder</mat-icon>
-                            <h4 mat-line>{{feature.title}}</h4>
-                            <p mat-line>Lorem ipsum dolor sit amet</p>
-                        </mat-list-item>
-                    </mat-list>
-                </div>
-                <div fxFlex="50">
-                    <mat-list>
-                        <mat-list-item *ngFor="let feature of propertyDetails.features | slice:4">
-                            <mat-icon mat-list-icon>folder</mat-icon>
-                            <h4 mat-line>{{feature.title}}</h4>
-                            <p mat-line>Lorem ipsum dolor sit amet</p>
-                        </mat-list-item>
-                    </mat-list>
-                </div>
+    <div fxLayout fxLayoutGap="50px">
+        <div fxFlex="70">
+            <div class="details__specs">
+                <h1 class="details__price mat-display-1">{{propertyDetails.price}} / mo.</h1>
+                <h2 class="details__address">{{propertyDetails.address.street}} {{propertyDetails.address.city}} {{propertyDetails.address.state}} {{propertyDetails.address.zip}}</h2>
+                <mat-list class="details__bed-bath" fxLayoutWrap>
+                    <mat-list-item fxFlex>
+                        <mat-icon matListIcon>hotel</mat-icon>
+                        <h4 class="listing__icon-title" matLine>{{propertyDetails.bed}} beds</h4>
+                    </mat-list-item>
+                    <mat-list-item class="" fxFlex>
+                        <mat-icon matListIcon>hot_tub</mat-icon>
+                        <h4 class="listing__icon-title" matLine>{{propertyDetails.bath}} bath</h4>
+                    </mat-list-item>
+                    <mat-list-item fxFlex>
+                        <mat-icon matListIcon>view_compact</mat-icon>
+                        <h4 class="listing__icon-title" matLine>{{propertyDetails.sqft}} sqft.</h4>
+                    </mat-list-item>
+                    <mat-list-item fxFlex>
+                        <mat-icon matListIcon>directions_walk</mat-icon>
+                        <h4 class="listing__icon-title" matLine>{{propertyDetails.walkscore}} (Walker's Paradise)</h4>
+                    </mat-list-item>
+                </mat-list>
+            </div>
+            <div class="details__description">
+                <p class="mat-body-1">{{propertyDetails.description.long}}</p>
+            </div>
+            <div class="details__section" fxLayoutWrap>
+                <h2 fxFlex="100">Features</h2>
+                <mat-list fxFlex="50">
+                    <mat-list-item *ngFor="let feature of propertyDetails.features | slice:0:4">
+                        <mat-icon mat-list-icon>{{feature.icon}}</mat-icon>
+                        <h4 mat-line>{{feature.title}}</h4>
+                        <p mat-line>{{feature.description}}</p>
+                    </mat-list-item>
+                </mat-list>
+                <mat-list fxFlex="50">
+                    <mat-list-item *ngFor="let feature of propertyDetails.features | slice:4">
+                        <mat-icon mat-list-icon>{{feature.icon}}</mat-icon>
+                        <h4 mat-line>{{feature.title}}</h4>
+                        <p mat-line>{{feature.description}}</p>
+                    </mat-list-item>
+                </mat-list>
+            </div>
+            <div class="details__section" *ngFor="let fact of propertyDetails.facts" fxLayoutWrap>
+                <h2 fxFlex="100">{{fact.title}}</h2>
+                <mat-list fxLayoutWrap>
+                    <mat-list-item *ngFor="let item of fact.list"  fxLayoutWrap>
+                        <mat-icon mat-list-icon>{{fact.icon}}</mat-icon>
+                        <h4 mat-line>{{item}}</h4>
+                    </mat-list-item>
+                </mat-list>
             </div>
         </div>
-        <div fxFlex="40">hello</div>
+        <div fxFlex="30">hello</div>
     </div>
 </section>

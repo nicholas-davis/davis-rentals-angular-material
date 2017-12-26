@@ -24,57 +24,112 @@
           "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_01.jpg"
         }
       ],
-      "facts": [
-        {
-          "title": "",
-          "description": "",
-          "icon": "",
-          "list": [
-            "",
-            ""
-          ]
-        }
-      ],
       "features": [
         {
           "title": "ADT Security System",
-          "description": "Feel safe with a FREE ADT Security System (included in the lease). Plus, ADT Security System works with nest",
-          "icon": ""
+          "description": "FREE ADT Security System",
+          "icon": "fingerprint"
         },
         {
           "title": "nest",
-          "description": "nest is a home automation producer of programmable, self-learning, sensor-driven, Wi-Fi-enabled thermostats, smoke detectors, and other security systems. nest will save you $$$ annually.",
-          "icon": ""
+          "description": "Save you $$$ annually.",
+          "icon": "home"
         },
         {
           "title": "Pets",
-          "description": "Pets are allow (i.e. cats, birds, rabbits or other). Dogs are prohibited.",
-          "icon": ""
+          "description": "Pets are allow. Dogs are prohibited.",
+          "icon": "pets"
         },
         {
           "title": "Verizon Fios",
-          "description": "Cable-ready Verizon Fios (not included in the lease). Unreal Speed, faster downloads, better Streaming Highest Speeds on the Market.",
-          "icon": ""
+          "description": "Cable-ready",
+          "icon": "desktop_windows"
         },
         {
           "title": "Washer and Dryer",
-          "description": "Maxima 4.5 cu. ft. High-Efficiency Front Load Washer in White, ENERGY STAR - Best Cleaning in the Industry Enabled by the PowerWash� Cycle3 Maxima 7.3 cu. ft. Gas Dryer with Steam in White - Give your outfit a quick touch-up and reduce wrinkles and odors with this front load dryer's Refresh cycle with Steam.",
-          "icon": ""
+          "description": "Maxima 4.5 cu. ft. High-Efficiency Washer/Dry.",
+          "icon": "local_laundry_service"
         },
         {
           "title": "Storage",
-          "description": "Not only 2 generously sized bedrooms, but there's more storage in the finished basement.",
-          "icon": ""
+          "description": "More storage in the finished basement.",
+          "icon": "view_stream"
         },
         {
           "title": "Nearby Restaurants",
-          "description": "Neighborhood amenities: coffee shops, American Sardine Bar, Rosario's Pizzeria, The Sidecar Bar & Grille, Circles Contemporary Asian, South Philadelphia Tap Room and so much more!",
-          "icon": ""
+          "description": "South Philadelphia right around the corner!",
+          "icon": "restaurant"
         },
         {
           "title": "Central Air",
           "description": "Stay cool with Central Air.",
-          "icon": ""
+          "icon": "blur_on"
+        }
+      ],
+      "facts": [
+        {
+          "title": "Facts",
+          "icon": "checkmark",
+          "list": [
+            "Beds: 2",
+            "Baths: 1 full, 1 half",
+            "Lot: 871 sqft",
+            "Townhouse",
+            "Rebuilt in 2014",
+            "Cooling: Central",
+            "Heating: Forced air"
+          ]
+        },
+        {
+          "title": "Appliances Included",
+          "icon": "checkmark",
+          "list": [
+            "Dishwasher",
+            "Garbage disposal",
+            "Microwave",
+            "Range / Oven",
+            "Refrigerator",
+            "Washer and Dryer"
+          ]
+        },
+        {
+          "title": "Room Types",
+          "icon": "checkmark",
+          "list": [
+            "Breakfast nook",
+            "Dining room",
+            "Laundry room"
+          ]
+        },
+        {
+          "title": "Construction",
+          "icon": "checkmark",
+          "list": [
+            "Exterior material: Brick",
+            "Stories: 2",
+            "Room count: 6"
+          ]
+        },
+        {
+          "title": "Community and Neighborhood",
+          "icon": "checkmark",
+          "list": [
+            "School district: Philadelphia City",
+            "Near Transportation"
+          ]
+        },
+        {
+          "title": "Other",
+          "icon": "checkmark",
+          "list": [
+            "Floor size: 1,300 sqft",
+            "Heating: Gas",
+            "Laundry: In Unit",
+            "Lot depth: 50 ft",
+            "Lot width: 14 ft",
+            "Fenced Yard",
+            "Parking: On street"
+          ]
         }
       ],
       "amenities": [

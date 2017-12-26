@@ -3,5 +3,37 @@
 }
 
 .details__images {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.details__specs {
+    margin-bottom: 20px;
+}
+
+.details__address {
+    margin-bottom: 0 !important; //TODO: REMOVE THIS HACK
+}
+
+.details__price {
+    margin-bottom: 0 !important; //TODO: REMOVE THIS HACK
+}
+
+.details__bed-bath {
+    padding-top: 0 !important; //TODO: REMOVE THIS HACK;
+
+    .mat-list-item-content {
+        
+        &:first-child {
+            padding-left: 0 !important;
+        }
+    }
+}
+
+.details__description {
+    margin-bottom: 50px;
+}
+
+.details__section {
     margin-bottom: 30px;
 }
