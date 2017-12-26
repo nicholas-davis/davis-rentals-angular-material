@@ -10,8 +10,8 @@
         </div>
     </div>
     <mat-grid-list class="details__images" cols="3" rowHeight="150px">
-        <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows" [style.background]="tile.color">
-            {{tile.text}}
+        <mat-grid-tile *ngFor="let image of propertyDetails.images | slice:0:3" [colspan]="image.cols" [rowspan]="image.rows">
+            <img [src]="image.url" [alt]="image.title">
         </mat-grid-tile>
     </mat-grid-list>
     <div fxLayout fxLayoutGap="50px">
@@ -22,11 +22,11 @@
                 <mat-list class="details__bed-bath" fxLayoutWrap>
                     <mat-list-item fxFlex>
                         <mat-icon matListIcon>hotel</mat-icon>
-                        <h4 class="listing__icon-title" matLine>{{propertyDetails.bed}} beds</h4>
+                        <h4 matLine>{{propertyDetails.bed}} beds</h4>
                     </mat-list-item>
                     <mat-list-item class="" fxFlex>
                         <mat-icon matListIcon>hot_tub</mat-icon>
-                        <h4 class="listing__icon-title" matLine>{{propertyDetails.bath}} bath</h4>
+                        <h4 matLine>{{propertyDetails.bath}} bath</h4>
                     </mat-list-item>
                     <mat-list-item fxFlex>
                         <mat-icon matListIcon>view_compact</mat-icon>
@@ -60,14 +60,34 @@
             </div>
             <div class="details__section" *ngFor="let fact of propertyDetails.facts" fxLayoutWrap>
                 <h2 fxFlex="100">{{fact.title}}</h2>
-                <mat-list fxLayoutWrap>
-                    <mat-list-item *ngFor="let item of fact.list"  fxLayoutWrap>
+                <mat-list class="details__facts" fxFlex>
+                    <mat-list-item *ngFor="let item of fact.list | slice:0:2">
+                        <mat-icon mat-list-icon>{{fact.icon}}</mat-icon>
+                        <h4 mat-line>{{item}}</h4>
+                    </mat-list-item>
+                </mat-list>
+                <mat-list class="details__facts" fxFlex>
+                    <mat-list-item *ngFor="let item of fact.list | slice:2:4">
+                        <mat-icon mat-list-icon>{{fact.icon}}</mat-icon>
+                        <h4 mat-line>{{item}}</h4>
+                    </mat-list-item>
+                </mat-list>
+                <mat-list class="details__facts" fxFlex>
+                    <mat-list-item *ngFor="let item of fact.list | slice:4:6">
+                        <mat-icon mat-list-icon>{{fact.icon}}</mat-icon>
+                        <h4 mat-line>{{item}}</h4>
+                    </mat-list-item>
+                </mat-list>
+                <mat-list class="details__facts" fxFlex>
+                    <mat-list-item *ngFor="let item of fact.list | slice:6:8">
                         <mat-icon mat-list-icon>{{fact.icon}}</mat-icon>
                         <h4 mat-line>{{item}}</h4>
                     </mat-list-item>
                 </mat-list>
             </div>
         </div>
-        <div fxFlex="30">hello</div>
+        <div fxFlex="30">
+            <mat-card>Simple card</mat-card>
+        </div>
     </div>
 </section>

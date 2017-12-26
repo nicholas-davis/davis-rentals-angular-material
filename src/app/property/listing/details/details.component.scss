@@ -34,6 +34,10 @@
     margin-bottom: 50px;
 }
 
+.details__facts {
+    padding-top: 0 !important; //TODO: REMOVE THIS HACK;
+}
+
 .details__section {
     margin-bottom: 30px;
 }
