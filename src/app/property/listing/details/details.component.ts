@@ -33,13 +33,6 @@ export class DetailsComponent implements OnInit {
         this.propertyDetails = this.route.snapshot.data.DetailsResolve;
         this.emitNewLayout();
         this.emitNewMapCoordinates();
-
-        this.tiles = [
-           
-            {text: 'Two', cols: 2, rows: 2, color: 'lightgreen'},
-            {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
-            {text: 'Four', cols: 1, rows: 1, color: '#DDBDF1'},
-          ];
     }
 
     emitNewLayout() {
