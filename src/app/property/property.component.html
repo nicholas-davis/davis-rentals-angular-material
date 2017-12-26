@@ -1,6 +1,6 @@
 <div [fxFlex]="structure.mapWidth" fxLayout fxFill>
     <agm-map class="property__map" [latitude]="map.latitude" [longitude]="map.longitude" [zoom]="map.zoom" [usePanning]="true">
-        <agm-marker [latitude]="map.latitude" [longitude]="map.longitude"></agm-marker>
+        <agm-marker *ngFor="let map of map.properties" [latitude]="map.latitude" [longitude]="map.longitude"></agm-marker>
     </agm-map>
 </div>
 <div class="property__sidenav mat-elevation-z10" [fxFlex]="structure.sidebarWidth" fxLayout fxFill>

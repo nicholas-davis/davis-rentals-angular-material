@@ -51,9 +51,19 @@ export class ListingComponent implements OnInit, OnDestroy {
 
     defaultMapCoordinates() {
         const defaultMapCoordinates = {
-            latitude: 39.9525839,
-            longitude: -75.16522150000003,
-            zoom: 16
+            latitude: 39.9305313,
+            longitude: -75.1683957,
+            zoom: 16,
+            properties: [
+                {
+                    latitude: 39.9340706,
+                    longitude: -75.17298449999998,
+                },
+                {
+                    latitude: 39.92817879999999,
+                    longitude: -75.16583880000002,
+                }
+            ]
         };
 
         // emit new map coordinates
