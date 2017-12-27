@@ -9,55 +9,59 @@
             </button>
         </div>
     </div>
-    <mat-grid-list class="details__images" cols="3" rowHeight="150px">
-        <mat-grid-tile *ngFor="let image of propertyDetails.images | slice:0:3" [colspan]="image.cols" [rowspan]="image.rows">
+    <mat-grid-list class="details__images" cols="4" rowHeight="150px">
+        <mat-grid-tile *ngFor="let image of propertyDetails.images | slice:0:5" [colspan]="image.cols" [rowspan]="image.rows">
             <img [src]="image.url" [alt]="image.title">
         </mat-grid-tile>
     </mat-grid-list>
     <div fxLayout fxLayoutGap="50px">
         <div fxFlex="70">
-            <div class="details__specs">
-                <h1 class="details__price mat-display-1">{{propertyDetails.price}} / mo.</h1>
-                <h2>{{propertyDetails.address.street}} {{propertyDetails.address.city}} {{propertyDetails.address.state}} {{propertyDetails.address.zip}}</h2>
-                <div fxLayout>
-                        <div class="listing__avatar-container" fxFlex="15" fxLayoutAlign="start none">
-                            <div fxLayout="column" fxLayoutAlign="start center">
-                                <div mat-card-avatar>
-                                    <mat-icon class="listing__avatar-icon">hotel</mat-icon>
-                                </div>
-                                <h4 class="listing__avatar-title">{{propertyDetails.bed}} beds</h4>
-                            </div>
-                        </div>
-                        <div class="listing__avatar-container" fxFlex="15" fxLayoutAlign="start none">
-                            <div fxLayout="column" fxLayoutAlign="start center">
-                                <div mat-card-avatar>
-                                    <mat-icon class="listing__avatar-icon">hot_tub</mat-icon>
-                                </div>
-                                <h4 class="listing__avatar-title">{{propertyDetails.bath}} bath</h4>
-                            </div>
-                        </div>
-                        <div class="listing__avatar-container" fxFlex="15" fxLayoutAlign="start none">
-                            <div fxLayout="column" fxLayoutAlign="start center">
-                                <div mat-card-avatar>
-                                    <mat-icon class="listing__avatar-icon">view_compact</mat-icon>
-                                </div>
-                                <h4 class="listing__avatar-title">{{propertyDetails.sqft}} sqft.</h4>
-                            </div>
-                        </div>
-                        <div class="listing__avatar-container" fxFlex="15" fxLayoutAlign="start none">
-                            <div fxLayout="column" fxLayoutAlign="start center">
-                                <div mat-card-avatar>
-                                    <mat-icon class="listing__avatar-icon">directions_walk</mat-icon>
-                                </div>
-                                <h4 class="listing__avatar-title">{{propertyDetails.walkscore}}</h4>
-                            </div>
-                        </div>
+            <div class="details__address" fxLayout>
+                <div fxFlex fxLayout="column">
+                    <h1 class="mat-h1" fxFlex>
+                        {{propertyDetails.address.street}}
+                        <br />{{propertyDetails.address.city}} {{propertyDetails.address.state}} {{propertyDetails.address.zip}}
+                    </h1>
+                    <h3 class="mat-h3">Custom high end 2 bedroom 1.5 bath renovation at a great price! </h3>
+                </div>
+                <h2 class="mat-h2">
+                    {{propertyDetails.price}} / mo.
+                </h2>
+            </div>
+            <div class="details__specs" fxLayout>
+                <div class="listing__avatar-container" fxFlex fxLayout="column" fxLayoutAlign="start center">
+                    <div mat-card-avatar>
+                        <mat-icon class="listing__avatar-icon">hotel</mat-icon>
                     </div>
-
-
+                    <h4 class="listing__avatar-title">{{propertyDetails.bed}} beds</h4>
+                </div>
+                <div class="listing__avatar-container" fxFlex fxLayout="column" fxLayoutAlign="start center">
+                    <div mat-card-avatar>
+                        <mat-icon class="listing__avatar-icon">hot_tub</mat-icon>
+                    </div>
+                    <h4 class="listing__avatar-title">{{propertyDetails.bath}} bath</h4>
+                </div>
+                <div class="listing__avatar-container" fxFlex fxLayout="column" fxLayoutAlign="start center">
+                    <div mat-card-avatar>
+                        <mat-icon class="listing__avatar-icon">view_compact</mat-icon>
+                    </div>
+                    <h4 class="listing__avatar-title">{{propertyDetails.sqft}} sqft.</h4>
+                </div>
+                <div class="listing__avatar-container" fxFlex fxLayout="column" fxLayoutAlign="start center">
+                    <div mat-card-avatar>
+                        <mat-icon class="listing__avatar-icon">directions_walk</mat-icon>
+                    </div>
+                    <h4 class="listing__avatar-title">{{propertyDetails.walkscore}}</h4>
+                </div>
+                <div class="listing__avatar-container" fxFlex fxLayout="column" fxLayoutAlign="start center">
+                    <div mat-card-avatar>
+                        <mat-icon class="listing__avatar-icon">blur_on</mat-icon>
+                    </div>
+                    <h4 class="listing__avatar-title">Central air</h4>
+                </div>
             </div>
             <div class="details__description">
-                <p class="mat-body-1">{{propertyDetails.description.long}}</p>
+                <p class="mat-subheading-2">{{propertyDetails.description.long}}</p>
             </div>
             <div class="details__section" fxLayoutWrap>
                 <h2 fxFlex="100">Features</h2>

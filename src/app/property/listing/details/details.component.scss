@@ -4,19 +4,28 @@
 
 .details__images {
     margin-top: 20px;
+}
+
+.details__address {
+    padding: 20px;
     margin-bottom: 30px;
+    background-color: #DDD; //TODO: GRAB COLOR FROM MAT-VARs
+
+    h1 {
+        margin-bottom:0;
+    }
+
+    h3 {
+        margin-bottom:0;
+    }
 }
 
 .details__specs {
-    margin-bottom: 20px;
-}
-
-.details__price {
-    margin-bottom: 0 !important; //TODO: REMOVE THIS HACK
+    margin-bottom: 30px;
 }
 
 .details__description {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .details__facts {

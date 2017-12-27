@@ -4,10 +4,11 @@
             alt="Photo of a Shiba Inu">
     </div>
     <mat-card-title>
-        {{property.type}} &mdash; {{property.price}} / mo.
+        {{property.address.street}}
+        <br/> {{property.address.city}} {{property.address.state}} {{property.address.zip}}
     </mat-card-title>
     <mat-card-subtitle>
-        {{property.address.street}} {{property.address.city}} {{property.address.state}}
+        {{property.price}} / mo.
     </mat-card-subtitle>
     <mat-card-content>
         <div fxLayout>
