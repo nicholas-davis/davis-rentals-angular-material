@@ -11,23 +11,8 @@
     margin-bottom: 20px;
 }
 
-.details__address {
-    margin-bottom: 0 !important; //TODO: REMOVE THIS HACK
-}
-
 .details__price {
     margin-bottom: 0 !important; //TODO: REMOVE THIS HACK
-}
-
-.details__bed-bath {
-    padding-top: 0 !important; //TODO: REMOVE THIS HACK;
-
-    .mat-list-item-content {
-        
-        &:first-child {
-            padding-left: 0 !important;
-        }
-    }
 }
 
 .details__description {
@@ -40,4 +25,22 @@
 
 .details__section {
     margin-bottom: 30px;
+}
+
+//TODO: TURN THESE INTO COMPONENTS 
+.listing__avatar-container {
+    position: relative;
+
+    .mat-card-avatar {
+        background-color: #DDD; //TODO: GRAB COLOR FROM MAT-VARs
+    }
+}
+
+.listing__avatar-icon {
+    padding: 8px;
+}
+
+.listing__avatar-title {
+    margin-top: 10px;
+    margin-bottom: 0 !important;
 }

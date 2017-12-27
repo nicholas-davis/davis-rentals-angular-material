@@ -1,4 +1,4 @@
-<section class="mat-typography" fxLayout="column">
+<section fxLayout="column">
     <div fxLayout>
         <div fxFlex="50">
             <button mat-raised-button color="primary" [routerLink]="['/']">Apply Today!</button>
@@ -18,25 +18,43 @@
         <div fxFlex="70">
             <div class="details__specs">
                 <h1 class="details__price mat-display-1">{{propertyDetails.price}} / mo.</h1>
-                <h2 class="details__address">{{propertyDetails.address.street}} {{propertyDetails.address.city}} {{propertyDetails.address.state}} {{propertyDetails.address.zip}}</h2>
-                <mat-list class="details__bed-bath" fxLayoutWrap>
-                    <mat-list-item fxFlex>
-                        <mat-icon matListIcon>hotel</mat-icon>
-                        <h4 matLine>{{propertyDetails.bed}} beds</h4>
-                    </mat-list-item>
-                    <mat-list-item class="" fxFlex>
-                        <mat-icon matListIcon>hot_tub</mat-icon>
-                        <h4 matLine>{{propertyDetails.bath}} bath</h4>
-                    </mat-list-item>
-                    <mat-list-item fxFlex>
-                        <mat-icon matListIcon>view_compact</mat-icon>
-                        <h4 class="listing__icon-title" matLine>{{propertyDetails.sqft}} sqft.</h4>
-                    </mat-list-item>
-                    <mat-list-item fxFlex>
-                        <mat-icon matListIcon>directions_walk</mat-icon>
-                        <h4 class="listing__icon-title" matLine>{{propertyDetails.walkscore}} (Walker's Paradise)</h4>
-                    </mat-list-item>
-                </mat-list>
+                <h2>{{propertyDetails.address.street}} {{propertyDetails.address.city}} {{propertyDetails.address.state}} {{propertyDetails.address.zip}}</h2>
+                <div fxLayout>
+                        <div class="listing__avatar-container" fxFlex="15" fxLayoutAlign="start none">
+                            <div fxLayout="column" fxLayoutAlign="start center">
+                                <div mat-card-avatar>
+                                    <mat-icon class="listing__avatar-icon">hotel</mat-icon>
+                                </div>
+                                <h4 class="listing__avatar-title">{{propertyDetails.bed}} beds</h4>
+                            </div>
+                        </div>
+                        <div class="listing__avatar-container" fxFlex="15" fxLayoutAlign="start none">
+                            <div fxLayout="column" fxLayoutAlign="start center">
+                                <div mat-card-avatar>
+                                    <mat-icon class="listing__avatar-icon">hot_tub</mat-icon>
+                                </div>
+                                <h4 class="listing__avatar-title">{{propertyDetails.bath}} bath</h4>
+                            </div>
+                        </div>
+                        <div class="listing__avatar-container" fxFlex="15" fxLayoutAlign="start none">
+                            <div fxLayout="column" fxLayoutAlign="start center">
+                                <div mat-card-avatar>
+                                    <mat-icon class="listing__avatar-icon">view_compact</mat-icon>
+                                </div>
+                                <h4 class="listing__avatar-title">{{propertyDetails.sqft}} sqft.</h4>
+                            </div>
+                        </div>
+                        <div class="listing__avatar-container" fxFlex="15" fxLayoutAlign="start none">
+                            <div fxLayout="column" fxLayoutAlign="start center">
+                                <div mat-card-avatar>
+                                    <mat-icon class="listing__avatar-icon">directions_walk</mat-icon>
+                                </div>
+                                <h4 class="listing__avatar-title">{{propertyDetails.walkscore}}</h4>
+                            </div>
+                        </div>
+                    </div>
+
+
             </div>
             <div class="details__description">
                 <p class="mat-body-1">{{propertyDetails.description.long}}</p>
