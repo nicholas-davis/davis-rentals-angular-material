@@ -16,6 +16,19 @@
     transform: scale(1.8);
 }
 
-.listing__icon-title {
-    margin: 0;
+.listing__avatar-container {
+    position: relative;
+
+    .mat-card-avatar {
+        background-color: #DDD; //TODO: GRAB COLOR FROM MAT-VARs
+    }
+}
+
+.listing__avatar-icon {
+    padding: 8px;
+}
+
+.listing__avatar-title {
+    margin-top: 10px;
+    margin-bottom: 0;
 }

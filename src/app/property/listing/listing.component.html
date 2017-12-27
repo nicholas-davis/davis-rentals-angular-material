@@ -1,30 +1,64 @@
 <mat-card class="listing" *ngFor="let property of properties.properties">
     <div class="listing__image">
-        <img class="listing__image-background" mat-card-image src="../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_01.jpg" alt="Photo of a Shiba Inu">
+        <img class="listing__image-background" mat-card-image src="../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_01.jpg"
+            alt="Photo of a Shiba Inu">
     </div>
     <!--<div class="listing__image">
         <div class="listing__image-background" [style.backgroundImage]="'url('+ property.image[0].url +')'"></div>
     </div>-->
     <mat-card-title>
-        {{property.type}} &mdash;
-        {{property.price}} / mo.
+        {{property.type}} &mdash; {{property.price}} / mo.
     </mat-card-title>
     <mat-card-subtitle>
-        {{property.address.street}}
-        {{property.address.city}}
-        {{property.address.state}}
+        {{property.address.street}} {{property.address.city}} {{property.address.state}}
     </mat-card-subtitle>
     <mat-card-content>
-        <mat-list fxLayout>
-            <mat-list-item fxFlex="20">
+
+        <!-- <img mat-card-avatar src="https://source.unsplash.com/random/200x200"> -->
+        <div fxLayout>
+            <div class="listing__avatar-container" fxFlex fxLayoutAlign="start none">
+                <div fxLayout="column" fxLayoutAlign="start center">
+                    <div mat-card-avatar>
+                        <mat-icon class="listing__avatar-icon">hotel</mat-icon>
+                    </div>
+                    <h4 class="listing__avatar-title">{{property.bed}} beds</h4>
+                </div>
+            </div>
+            <div class="listing__avatar-container" fxFlex fxLayoutAlign="start none">
+                <div fxLayout="column" fxLayoutAlign="start center">
+                    <div mat-card-avatar>
+                        <mat-icon class="listing__avatar-icon">hot_tub</mat-icon>
+                    </div>
+                    <h4 class="listing__avatar-title">{{property.bath}} bath</h4>
+                </div>
+            </div>
+            <div class="listing__avatar-container" fxFlex fxLayoutAlign="start none">
+                <div fxLayout="column" fxLayoutAlign="start center">
+                    <div mat-card-avatar>
+                        <mat-icon class="listing__avatar-icon">view_compact</mat-icon>
+                    </div>
+                    <h4 class="listing__avatar-title">{{property.sqft}} sqft.</h4>
+                </div>
+            </div>
+            <div class="listing__avatar-container" fxFlex fxLayoutAlign="start none">
+                <div fxLayout="column" fxLayoutAlign="start center">
+                    <div mat-card-avatar>
+                        <mat-icon class="listing__avatar-icon">directions_walk</mat-icon>
+                    </div>
+                    <h4 class="listing__avatar-title">{{property.walkscore}}</h4>
+                </div>
+            </div>
+        </div>
+        <!-- <mat-list fxLayoutWrap>
+            <mat-list-item fxFlex>
                 <mat-icon matListIcon>hotel</mat-icon>
                 <h4 class="listing__icon-title" matLine>{{property.bed}} beds</h4>
             </mat-list-item>
-            <mat-list-item fxFlex="20">
+            <mat-list-item fxFlex>
                 <mat-icon matListIcon>hot_tub</mat-icon>
                 <h4 class="listing__icon-title" matLine>{{property.bath}} bath</h4>
             </mat-list-item>
-            <mat-list-item fxFlex="20">
+            <mat-list-item fxFlex>
                 <mat-icon matListIcon>view_compact</mat-icon>
                 <h4 class="listing__icon-title" matLine>{{property.sqft}} sqft.</h4>
             </mat-list-item>
@@ -32,7 +66,7 @@
                 <mat-icon matListIcon>directions_walk</mat-icon>
                 <h4 class="listing__icon-title" matLine>{{property.walkscore}} (Walker's Paradise)</h4>
             </mat-list-item>
-        </mat-list>
+        </mat-list> -->
         <p>{{property.description.short}}</p>
     </mat-card-content>
     <mat-card-actions>
