@@ -2,15 +2,14 @@
     <h1 class="mat-title">Properties</h1>
     <mat-card class="listing__property" *ngFor="let property of properties.properties">
         <div class="listing__image">
-            <img class="listing__image-background" mat-card-image src="../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_01.jpg"
-                alt="Photo of a Shiba Inu">
+            <img class="listing__image-background" mat-card-image [src]="property.images[0].url" [alt]="property.images[0].title">
         </div>
         <mat-card-title>
             {{property.address.street}}
             <br/> {{property.address.city}} {{property.address.state}} {{property.address.zip}}
         </mat-card-title>
         <mat-card-subtitle>
-            {{property.price}} / mo.
+            {{property.price}} / {{property.quota}}
         </mat-card-subtitle>
         <mat-card-content>
             <div fxLayout>
@@ -51,7 +50,7 @@
         </mat-card-content>
         <mat-card-actions>
             <button mat-button [routerLink]="['/listing', property.url]">DETAILS</button>
-            <button mat-button>SHARE</button>
+            <!-- <button mat-button>SHARE</button> -->
         </mat-card-actions>
     </mat-card>
 </section>

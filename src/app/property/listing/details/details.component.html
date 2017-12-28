@@ -6,7 +6,7 @@
             </button>
         </div>
         <div fxFlex="50" fxLayoutAlign="end">
-           
+
         </div>
     </div>
     <mat-grid-list class="details__images" cols="4" rowHeight="150px">
@@ -22,10 +22,10 @@
                         {{propertyDetails.address.street}}
                         <br />{{propertyDetails.address.city}} {{propertyDetails.address.state}} {{propertyDetails.address.zip}}
                     </h1>
-                    <h3 class="mat-h3">Custom high end 2 bedroom 1.5 bath renovation at a great price! </h3>
+                    <h3 class="mat-h3">{{propertyDetails.description.blurb}}</h3>
                 </div>
                 <h2 class="mat-h2">
-                    {{propertyDetails.price}} / mo.
+                    {{propertyDetails.price}} / {{propertyDetails.quota}}
                 </h2>
             </div>
             <div class="details__specs" fxLayout>
@@ -110,12 +110,12 @@
         </div>
         <div fxFlex="30">
             <mat-card class="details__apply mat-elevation-z10">
-                <mat-card-title>Rental Application</mat-card-title>
+                <mat-card-title>{{propertyDetails.type}} Application</mat-card-title>
                 <mat-card-subtitle>
                     Receive a response within 12-24 hours
                 </mat-card-subtitle>
                 <mat-card-actions>
-                    <button fxFill mat-raised-button color="primary" [routerLink]="['/']">Apply Today!</button>
+                    <button fxFill mat-raised-button color="primary" [routerLink]="['/']"> {{propertyDetails.apply}}</button>
                 </mat-card-actions>
             </mat-card>
         </div>

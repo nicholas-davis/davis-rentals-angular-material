@@ -3,7 +3,9 @@
     {
       "url": "1327-s-colorado-st",
       "type": "Rental",
+      "apply": "Apply Today!",
       "description": {
+        "blurb": "Custom high end 2 bedroom 1.5 bath renovation at a great price!",
         "short": "Custom high end 2 bedroom 1.5 bath renovation at a great price! This beautiful home is on a tree-lined block surrounded by new construction homes and walkable to wonderful neighborhood amenities like coffee shops the American Sardine Bar and much more.",
         "long": "This beautiful home is on a tree-lined block surrounded by new construction homes and walkable to wonderful neighborhood amenities like coffee shops the American Sardine Bar and much more. This beautiful home offers wide plank hardwood floors throughout lots of natural light beautiful brand new brick fa~ade and large rear yard. The ultra-modern kitchen boasts a granite breakfast bar granite countertops tile backsplash and luxurious stainless steel appliance package. There is also a large finished basement that could be used as an additional living area with a half bath with beautiful tile floor recessed lighting and storage closet. Bedrooms are generously sized both with double closets and great light. The bathroom is absolutely stunning with designer fixtures perfect tile work and functional layout. Absolutely the perfect home!"
       },
@@ -14,6 +16,7 @@
         "zip": "19146"
       },
       "price": "$1,595",
+      "quota": "mo.",
       "bed": "2",
       "bath": "2",
       "sqft": "1,300",
@@ -339,10 +342,12 @@
     },
     {
       "url": "1245-pierce-st",
-      "type": "Rental",
+      "type": "Airbrb",
+      "apply": "Book Today!",
       "description": {
-        "short": " YESSSS !! Custom high end 2 bedroom 1.5 bath renovation at a great price! This beautiful home is on a tree-lined block surrounded by new construction homes and walkable to wonderful neighborhood amenities like coffee shops the American Sardine Bar and much more.",
-        "long": ""
+        "blurb": "Location, Location, Location. If you're looking to book right in the middle of one of the hottest neighborhoods, this is the place for you!",
+        "short": "Our spacious house will give you all the comforts of home while traveling. Located in the heart of East Passyunk Avenue, voted one of “Top 10 Foodie Streets in America” by Food and Wine Magazine, you are guaranteed to experience amazing restaurants, coffee shops and retail stores all right outside your door!",
+        "long": "Our spacious house will give you all the comforts of home while traveling. Located in the heart of East Passyunk Avenue, voted one of “Top 10 Foodie Streets in America” by Food and Wine Magazine, you are guaranteed to experience amazing restaurants, coffee shops and retail stores all right outside your door! Stadiums and concert venues are just down the street for all your entertainment needs. Come experience the culture of Philadelphia in this charming neighborhood."
       },
       "address": {
         "street": "1245 Pierce St",
@@ -350,68 +355,150 @@
         "state": "PA",
         "zip": "19148"
       },
-      "price": "$1,595",
+      "price": "$98",
+      "quota": "mo.",
       "bed": "2",
-      "bath": "2",
-      "sqft": "1,300",
-      "walkscore": "92",
-      "image": [
+      "bath": "1",
+      "sqft": "1,100",
+      "walkscore": "98",
+      "images": [
         {
-          "title": "",
-          "url": "../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_01.jpg"
-        }
-      ],
-      "facts": [
+          "title": "1245 Pierce St Philadelphia PA 19148",
+          "url": "../assets/images/properties/1245_pierce_st_philadelphia_pa_19148_picture_01.jpg",
+          "cols": 2,
+          "rows": 2
+        },
         {
-          "title": "",
-          "description": "",
-          "icon": "",
-          "list": [
-            "",
-            ""
-          ]
+          "title": "1245 Pierce St Philadelphia PA 19148",
+          "url": "../assets/images/properties/1245_pierce_st_philadelphia_pa_19148_picture_02.jpg",
+          "cols": 1,
+          "rows": 1
+        },
+        {
+          "title": "1245 Pierce St Philadelphia PA 19148",
+          "url": "../assets/images/properties/1245_pierce_st_philadelphia_pa_19148_picture_03.jpg",
+          "cols": 1,
+          "rows": 1
+        },
+        {
+          "title": "1245 Pierce St Philadelphia PA 19148",
+          "url": "../assets/images/properties/1245_pierce_st_philadelphia_pa_19148_picture_04.jpg",
+          "cols": 1,
+          "rows": 1
+        },
+        {
+          "title": "1245 Pierce St Philadelphia PA 19148",
+          "url": "../assets/images/properties/1245_pierce_st_philadelphia_pa_19148_picture_05.jpg",
+          "cols": 1,
+          "rows": 1
         }
       ],
       "features": [
         {
           "title": "ADT Security System",
-          "description": "Feel safe with a FREE ADT Security System (included in the lease). Plus, ADT Security System works with nest",
-          "icon": ""
+          "description": "FREE ADT Security System",
+          "icon": "fingerprint"
         },
         {
           "title": "nest",
-          "description": "nest is a home automation producer of programmable, self-learning, sensor-driven, Wi-Fi-enabled thermostats, smoke detectors, and other security systems. nest will save you $$$ annually.",
-          "icon": ""
+          "description": "Save you $$$ annually.",
+          "icon": "home"
         },
         {
           "title": "Pets",
-          "description": "Pets are allow (i.e. cats, birds, rabbits or other). Dogs are prohibited.",
-          "icon": ""
+          "description": "Pets are allow. Dogs are prohibited.",
+          "icon": "pets"
         },
         {
           "title": "Verizon Fios",
-          "description": "Cable-ready Verizon Fios (not included in the lease). Unreal Speed, faster downloads, better Streaming Highest Speeds on the Market.",
-          "icon": ""
+          "description": "Cable-ready",
+          "icon": "desktop_windows"
         },
         {
           "title": "Washer and Dryer",
-          "description": "Maxima 4.5 cu. ft. High-Efficiency Front Load Washer in White, ENERGY STAR - Best Cleaning in the Industry Enabled by the PowerWash� Cycle3 Maxima 7.3 cu. ft. Gas Dryer with Steam in White - Give your outfit a quick touch-up and reduce wrinkles and odors with this front load dryer's Refresh cycle with Steam.",
-          "icon": ""
+          "description": "Maxima 4.5 cu. ft. High-Efficiency Washer/Dry.",
+          "icon": "local_laundry_service"
         },
         {
           "title": "Storage",
-          "description": "Not only 2 generously sized bedrooms, but there's more storage in the finished basement.",
-          "icon": ""
+          "description": "More storage in the finished basement.",
+          "icon": "view_stream"
         },
         {
           "title": "Nearby Restaurants",
-          "description": "Neighborhood amenities: coffee shops, American Sardine Bar, Rosario's Pizzeria, The Sidecar Bar & Grille, Circles Contemporary Asian, South Philadelphia Tap Room and so much more!",
-          "icon": ""
+          "description": "South Philadelphia right around the corner!",
+          "icon": "restaurant"
         },
         {
           "title": "Central Air",
           "description": "Stay cool with Central Air.",
-          "icon": ""
+          "icon": "blur_on"
+        }
+      ],
+      "facts": [
+        {
+          "title": "Facts",
+          "icon": "checkmark",
+          "list": [
+            "Beds: 2",
+            "Baths: 1 full, 1 half",
+            "Lot: 871 sqft",
+            "Townhouse",
+            "Rebuilt in 2014",
+            "Cooling: Central",
+            "Heating: Forced air"
+          ]
+        },
+        {
+          "title": "Appliances Included",
+          "icon": "checkmark",
+          "list": [
+            "Dishwasher",
+            "Garbage disposal",
+            "Microwave",
+            "Range / Oven",
+            "Refrigerator",
+            "Washer and Dryer"
+          ]
+        },
+        {
+          "title": "Room Types",
+          "icon": "checkmark",
+          "list": [
+            "Breakfast nook",
+            "Dining room",
+            "Laundry room"
+          ]
+        },
+        {
+          "title": "Construction",
+          "icon": "checkmark",
+          "list": [
+            "Exterior material: Brick",
+            "Stories: 2",
+            "Room count: 6"
+          ]
+        },
+        {
+          "title": "Community and Neighborhood",
+          "icon": "checkmark",
+          "list": [
+            "School district: Philadelphia City",
+            "Near Transportation"
+          ]
+        },
+        {
+          "title": "Other",
+          "icon": "checkmark",
+          "list": [
+            "Floor size: 1,300 sqft",
+            "Heating: Gas",
+            "Laundry: In Unit",
+            "Lot depth: 50 ft",
+            "Lot width: 14 ft",
+            "Fenced Yard",
+            "Parking: On street"
+          ]
         }
       ],
       "amenities": [
