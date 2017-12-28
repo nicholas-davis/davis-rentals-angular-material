@@ -1,54 +1,57 @@
-<mat-card class="listing" *ngFor="let property of properties.properties">
-    <div class="listing__image">
-        <img class="listing__image-background" mat-card-image src="../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_01.jpg"
-            alt="Photo of a Shiba Inu">
-    </div>
-    <mat-card-title>
-        {{property.address.street}}
-        <br/> {{property.address.city}} {{property.address.state}} {{property.address.zip}}
-    </mat-card-title>
-    <mat-card-subtitle>
-        {{property.price}} / mo.
-    </mat-card-subtitle>
-    <mat-card-content>
-        <div fxLayout>
-            <div class="listing__avatar-container" fxFlex fxLayoutAlign="start none">
-                <div fxLayout="column" fxLayoutAlign="start center">
-                    <div mat-card-avatar>
-                        <mat-icon class="listing__avatar-icon">hotel</mat-icon>
-                    </div>
-                    <h4 class="listing__avatar-title">{{property.bed}} beds</h4>
-                </div>
-            </div>
-            <div class="listing__avatar-container" fxFlex fxLayoutAlign="start none">
-                <div fxLayout="column" fxLayoutAlign="start center">
-                    <div mat-card-avatar>
-                        <mat-icon class="listing__avatar-icon">hot_tub</mat-icon>
-                    </div>
-                    <h4 class="listing__avatar-title">{{property.bath}} bath</h4>
-                </div>
-            </div>
-            <div class="listing__avatar-container" fxFlex fxLayoutAlign="start none">
-                <div fxLayout="column" fxLayoutAlign="start center">
-                    <div mat-card-avatar>
-                        <mat-icon class="listing__avatar-icon">view_compact</mat-icon>
-                    </div>
-                    <h4 class="listing__avatar-title">{{property.sqft}} sqft.</h4>
-                </div>
-            </div>
-            <div class="listing__avatar-container" fxFlex fxLayoutAlign="start none">
-                <div fxLayout="column" fxLayoutAlign="start center">
-                    <div mat-card-avatar>
-                        <mat-icon class="listing__avatar-icon">directions_walk</mat-icon>
-                    </div>
-                    <h4 class="listing__avatar-title">{{property.walkscore}}</h4>
-                </div>
-            </div>
+<section class="listing">
+    <h1 class="mat-title">Properties</h1>
+    <mat-card class="listing__property" *ngFor="let property of properties.properties">
+        <div class="listing__image">
+            <img class="listing__image-background" mat-card-image src="../assets/images/properties/1327_s_colorado_st_philadelphia_pa_19146_picture_01.jpg"
+                alt="Photo of a Shiba Inu">
         </div>
-        <p>{{property.description.short}}</p>
-    </mat-card-content>
-    <mat-card-actions>
-        <button mat-button [routerLink]="['/listing', property.url]">DETAILS</button>
-        <button mat-button>SHARE</button>
-    </mat-card-actions>
-</mat-card>
+        <mat-card-title>
+            {{property.address.street}}
+            <br/> {{property.address.city}} {{property.address.state}} {{property.address.zip}}
+        </mat-card-title>
+        <mat-card-subtitle>
+            {{property.price}} / mo.
+        </mat-card-subtitle>
+        <mat-card-content>
+            <div fxLayout>
+                <div class="listing__avatar-container" fxFlex fxLayoutAlign="start none">
+                    <div fxLayout="column" fxLayoutAlign="start center">
+                        <div mat-card-avatar>
+                            <mat-icon class="listing__avatar-icon">hotel</mat-icon>
+                        </div>
+                        <h4 class="listing__avatar-title">{{property.bed}} beds</h4>
+                    </div>
+                </div>
+                <div class="listing__avatar-container" fxFlex fxLayoutAlign="start none">
+                    <div fxLayout="column" fxLayoutAlign="start center">
+                        <div mat-card-avatar>
+                            <mat-icon class="listing__avatar-icon">hot_tub</mat-icon>
+                        </div>
+                        <h4 class="listing__avatar-title">{{property.bath}} bath</h4>
+                    </div>
+                </div>
+                <div class="listing__avatar-container" fxFlex fxLayoutAlign="start none">
+                    <div fxLayout="column" fxLayoutAlign="start center">
+                        <div mat-card-avatar>
+                            <mat-icon class="listing__avatar-icon">view_compact</mat-icon>
+                        </div>
+                        <h4 class="listing__avatar-title">{{property.sqft}} sqft.</h4>
+                    </div>
+                </div>
+                <div class="listing__avatar-container" fxFlex fxLayoutAlign="start none">
+                    <div fxLayout="column" fxLayoutAlign="start center">
+                        <div mat-card-avatar>
+                            <mat-icon class="listing__avatar-icon">directions_walk</mat-icon>
+                        </div>
+                        <h4 class="listing__avatar-title">{{property.walkscore}}</h4>
+                    </div>
+                </div>
+            </div>
+            <p>{{property.description.short}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button [routerLink]="['/listing', property.url]">DETAILS</button>
+            <button mat-button>SHARE</button>
+        </mat-card-actions>
+    </mat-card>
+</section>
