@@ -1,12 +1,12 @@
 <section fxLayout="column">
     <div fxLayout>
         <div fxFlex="50">
-            <button mat-raised-button color="primary" [routerLink]="['/']">Apply Today!</button>
+            <button mat-icon-button [routerLink]="['/']">
+                <mat-icon aria-label="close">arrow_back</mat-icon>
+            </button>
         </div>
         <div fxFlex="50" fxLayoutAlign="end">
-            <button mat-icon-button [routerLink]="['/']">
-                <mat-icon aria-label="close">close</mat-icon>
-            </button>
+           
         </div>
     </div>
     <mat-grid-list class="details__images" cols="4" rowHeight="150px">
@@ -39,7 +39,7 @@
                     <div mat-card-avatar>
                         <mat-icon class="listing__avatar-icon">hot_tub</mat-icon>
                     </div>
-                    <h4 class="listing__avatar-title">{{propertyDetails.bath}} bath</h4>
+                    <h4 class="listing__avatar-title">{{propertyDetails.bath}} baths</h4>
                 </div>
                 <div class="listing__avatar-container" fxFlex fxLayout="column" fxLayoutAlign="start center">
                     <div mat-card-avatar>
@@ -109,7 +109,15 @@
             </div>
         </div>
         <div fxFlex="30">
-            <mat-card class="details__apply mat-elevation-z10">Simple card</mat-card>
+            <mat-card class="details__apply mat-elevation-z10">
+                <mat-card-title>Rental Application</mat-card-title>
+                <mat-card-subtitle>
+                    Receive a response within 12-24 hours
+                </mat-card-subtitle>
+                <mat-card-actions>
+                    <button fxFill mat-raised-button color="primary" [routerLink]="['/']">Apply Today!</button>
+                </mat-card-actions>
+            </mat-card>
         </div>
     </div>
 </section>
