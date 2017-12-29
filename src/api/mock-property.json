@@ -3,7 +3,10 @@
     {
       "url": "1327-s-colorado-st",
       "type": "Rental",
-      "apply": "Apply Today!",
+      "apply": {
+        "text": "Apply Today!",
+        "url": "https://rental.turbotenant.com/properties/922"
+      },
       "description": {
         "blurb": "Custom high end 2 bedroom 1.5 bath renovation at a great price!",
         "short": "Custom high end 2 bedroom 1.5 bath renovation at a great price! This beautiful home is on a tree-lined block surrounded by new construction homes and walkable to wonderful neighborhood amenities like coffee shops the American Sardine Bar and much more.",
@@ -343,7 +346,10 @@
     {
       "url": "1245-pierce-st",
       "type": "Airbrb",
-      "apply": "Book Today!",
+      "apply": {
+        "text": "Book Today!",
+        "url": "http://www.goo.gl/ssXNJu"
+      },
       "description": {
         "blurb": "Location, Location, Location. If you're looking to book right in the middle of one of the hottest neighborhoods, this is the place for you!",
         "short": "Our spacious house will give you all the comforts of home while traveling. Located in the heart of East Passyunk Avenue, voted one of “Top 10 Foodie Streets in America” by Food and Wine Magazine, you are guaranteed to experience amazing restaurants, coffee shops and retail stores all right outside your door!",
@@ -356,7 +362,7 @@
         "zip": "19148"
       },
       "price": "$98",
-      "quota": "mo.",
+      "quota": "day",
       "bed": "2",
       "bath": "1",
       "sqft": "1,100",
