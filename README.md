@@ -14,4 +14,4 @@ This application is for demonstration purposes only.
 - coming soon
 
 ## Demo
-- coming soon
+- Check out the Davis Rentals live: [demo](http://davis.rentals/)
