@@ -15,3 +15,6 @@ This application is for demonstration purposes only.
 
 ## Demo
 - Check out the Davis Rentals app live: [demo](http://davis.rentals/)
+
+## Disclosure
+- Stay tune for this app to become mobile friendly ;)
