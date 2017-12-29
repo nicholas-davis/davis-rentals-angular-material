@@ -14,4 +14,4 @@ This application is for demonstration purposes only.
 - coming soon
 
 ## Demo
-- Check out the Davis Rentals live: [demo](http://davis.rentals/)
+- Check out the Davis Rentals app live: [demo](http://davis.rentals/)
