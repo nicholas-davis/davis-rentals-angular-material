@@ -21,18 +21,42 @@ export class DetailsComponent implements OnInit {
         private route: ActivatedRoute,
         private utilityService: UtilityService,
     ) {
-        title.setTitle('Davis');
-        meta.addTags([
-            { name: 'author', content: '' },
-            { name: 'keywords', content: '' },
-            { name: 'description', content: '' }
-        ]);
+        // title.setTitle('Davis');
+        // meta.addTags([
+        //     { name: 'author', content: '' },
+        //     { name: 'keywords', content: '' },
+        //     { name: 'description', content: '' }
+        // ]);
     }
 
     ngOnInit() {
         this.propertyDetails = this.route.snapshot.data.DetailsResolve;
+        this.setPageInfo();
         this.emitNewLayout();
         this.emitNewMapCoordinates();
+    }
+
+    // TODO: CREATE PAGE INFO COMPONENT
+    setPageInfo() {
+        const pageTitle = 'Davis Rentals - '
+            + this.propertyDetails.address.street + ' '
+            + this.propertyDetails.address.city + ' '
+            + this.propertyDetails.address.state + ' '
+            + this.propertyDetails.address.zip;
+
+        const pageDescription = this.propertyDetails.description.short;
+
+        this.title.setTitle(pageTitle);
+        this.meta.addTags([
+            {
+                name: 'author',
+                content: 'Nicholas Davis'
+            },
+            {
+                name: 'description',
+                content: pageDescription
+            }
+        ]);
     }
 
     emitNewLayout() {
