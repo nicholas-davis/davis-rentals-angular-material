@@ -80,6 +80,21 @@
                     </mat-list-item>
                 </mat-list>
             </div>
+            <div class="details__section" fxLayoutWrap>
+                <h2 fxFlex="100">Amenities</h2>
+                <mat-list fxFlex="50">
+                    <mat-list-item *ngFor="let amenity of propertyDetails.amenities | slice:0:4">
+                        <mat-icon mat-list-icon>{{amenity.icon}}</mat-icon>
+                        <h4 mat-line>{{amenity.title}}</h4>
+                    </mat-list-item>
+                </mat-list>
+                <mat-list fxFlex="50">
+                    <mat-list-item *ngFor="let amenity of propertyDetails.amenities | slice:4">
+                        <mat-icon mat-list-icon>{{amenity.icon}}</mat-icon>
+                        <h4 mat-line>{{amenity.title}}</h4>
+                    </mat-list-item>
+                </mat-list>
+            </div>
             <div class="details__section" *ngFor="let fact of propertyDetails.facts" fxLayoutWrap>
                 <h2 fxFlex="100">{{fact.title}}</h2>
                 <mat-list class="details__facts" fxFlex>

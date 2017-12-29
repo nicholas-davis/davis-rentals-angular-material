@@ -266,6 +266,12 @@
           "icon": "blur_on"
         }
       ],
+      "amenities": [
+        {
+          "title": "",
+          "icon": ""
+        }
+      ],
       "facts": [
         {
           "title": "Facts",
@@ -330,11 +336,6 @@
             "Fenced Yard",
             "Parking: On street"
           ]
-        }
-      ],
-      "amenities": [
-        {
-          "": ""
         }
       ],
       "map": {
@@ -401,44 +402,78 @@
       ],
       "features": [
         {
-          "title": "ADT Security System",
-          "description": "FREE ADT Security System",
-          "icon": "fingerprint"
-        },
-        {
           "title": "nest",
-          "description": "Save you $$$ annually.",
+          "description": "Visually easy to use",
           "icon": "home"
         },
         {
-          "title": "Pets",
-          "description": "Pets are allow. Dogs are prohibited.",
-          "icon": "pets"
+          "title": "netflix",
+          "description": " movies & TV shows online",
+          "icon": "tv"
         },
         {
-          "title": "Verizon Fios",
-          "description": "Cable-ready",
-          "icon": "desktop_windows"
-        },
-        {
-          "title": "Washer and Dryer",
-          "description": "Maxima 4.5 cu. ft. High-Efficiency Washer/Dry.",
-          "icon": "local_laundry_service"
-        },
-        {
-          "title": "Storage",
-          "description": "More storage in the finished basement.",
-          "icon": "view_stream"
-        },
-        {
-          "title": "Nearby Restaurants",
-          "description": "South Philadelphia right around the corner!",
-          "icon": "restaurant"
+          "title": "Wireless Internet",
+          "description": "Powerful fios connection",
+          "icon": "wifi"
         },
         {
           "title": "Central Air",
           "description": "Stay cool with Central Air.",
           "icon": "blur_on"
+        },
+        {
+          "title": "Restaurants",
+          "description": "Top 10 Foodie Streets in America",
+          "icon": "restaurant"
+        },
+        {
+          "title": "Shops",
+          "description": "Walkable to 20+ shops",
+          "icon": "store_mall_directory"
+        },
+        {
+          "title": "Grocery store",
+          "description": "Large grocery store",
+          "icon": "restaurant"
+        },
+        {
+          "title": "Nearby train/bus stations",
+          "description": "Walkable to transportation",
+          "icon": "directions_transit"
+        }
+      ],
+      "amenities": [
+        {
+          "title": "Family/kid friendly",
+          "icon": "tag_faces"
+        },
+        {
+          "title": "Laptop friendly workspace",
+          "icon": "laptop"
+        },
+        {
+          "title": "Tv",
+          "icon": "tv"
+        },
+        {
+          "title": "Wireless Internet",
+          "icon": "wifi"
+        },
+        {
+          "title": "Ethernet connection",
+          "icon": "settings_input_hdmi"
+        },
+        {
+          "title": "Bathtub",
+          "icon": "hot_tub"
+        },
+        {
+          "title": "Air conditioning",
+          "icon": "blur_on"
+        },
+        {
+          "title": "Heating",
+          "icon": "wifi_tethering"
         }
       ],
       "facts": [
@@ -447,10 +482,9 @@
           "icon": "checkmark",
           "list": [
             "Beds: 2",
-            "Baths: 1 full, 1 half",
-            "Lot: 871 sqft",
+            "Baths: 1 full",
+            "Lot: 701 sqft",
             "Townhouse",
-            "Rebuilt in 2014",
             "Cooling: Central",
             "Heating: Forced air"
           ]
@@ -463,53 +497,17 @@
             "Garbage disposal",
             "Microwave",
             "Range / Oven",
-            "Refrigerator",
-            "Washer and Dryer"
-          ]
-        },
-        {
-          "title": "Room Types",
-          "icon": "checkmark",
-          "list": [
-            "Breakfast nook",
-            "Dining room",
-            "Laundry room"
-          ]
-        },
-        {
-          "title": "Construction",
-          "icon": "checkmark",
-          "list": [
-            "Exterior material: Brick",
-            "Stories: 2",
-            "Room count: 6"
-          ]
-        },
-        {
-          "title": "Community and Neighborhood",
-          "icon": "checkmark",
-          "list": [
-            "School district: Philadelphia City",
-            "Near Transportation"
+            "Refrigerator"
           ]
         },
         {
           "title": "Other",
           "icon": "checkmark",
           "list": [
-            "Floor size: 1,300 sqft",
             "Heating: Gas",
-            "Laundry: In Unit",
-            "Lot depth: 50 ft",
-            "Lot width: 14 ft",
             "Fenced Yard",
             "Parking: On street"
           ]
-        }
-      ],
-      "amenities": [
-        {
-          "": ""
         }
       ],
       "map": {
