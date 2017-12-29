@@ -268,8 +268,8 @@
       ],
       "amenities": [
         {
-          "title": "",
-          "icon": ""
+          "title": "Security System",
+          "icon": "fingerprint"
         }
       ],
       "facts": [
