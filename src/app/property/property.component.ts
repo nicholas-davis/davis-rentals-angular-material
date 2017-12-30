@@ -4,6 +4,18 @@ import { Subscription } from 'rxjs/Subscription';
 import { UtilityService } from '../shared/utility.service';
 import { AgmMap } from '@agm/core/directives/map';
 
+interface LayoutInterface {
+    mapWidth: number;
+    sidebarWidth: number;
+}
+
+interface MapInterface {
+    latitude: number;
+    longitude: number;
+    zoom: number;
+    properties: object;
+}
+
 @Component({
     selector: 'app-property',
     templateUrl: './property.component.html',
@@ -14,9 +26,9 @@ export class PropertyComponent implements OnInit, OnDestroy {
     @HostBinding('attr.class') class = 'property';
     @ViewChild(AgmMap) agmMap: AgmMap;
 
-    map: object;
+    map: MapInterface;
     mapSubscription: Subscription;
-    structure: object;
+    structure: LayoutInterface;
     structureSubscription: Subscription;
 
     constructor(
@@ -53,15 +65,18 @@ export class PropertyComponent implements OnInit, OnDestroy {
 
     layout() {
         return this.structureSubscription = this.utilityService.defaultLayout
-            .subscribe((structure: object) => this.structure = structure);
+            .subscribe((structure: LayoutInterface) => {
+                this.structure = structure;
+            });
     }
 
     mapCoordinates() {
-        return this.mapSubscription = this.utilityService.defaultMapMarker.subscribe((map: object) => {
-            this.map = map;
-            this.agmMap.triggerResize();
-            this.changeDetectorRef.detectChanges();
-        });
+        return this.mapSubscription = this.utilityService.defaultMapMarker
+            .subscribe((map: MapInterface) => {
+                this.map = map;
+                this.agmMap.triggerResize();
+                this.changeDetectorRef.detectChanges();
+            });
     }
 
     ngOnDestroy() {
