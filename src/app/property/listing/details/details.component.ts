@@ -20,14 +20,7 @@ export class DetailsComponent implements OnInit {
         private title: Title,
         private route: ActivatedRoute,
         private utilityService: UtilityService,
-    ) {
-        // title.setTitle('Davis');
-        // meta.addTags([
-        //     { name: 'author', content: '' },
-        //     { name: 'keywords', content: '' },
-        //     { name: 'description', content: '' }
-        // ]);
-    }
+    ) { }
 
     ngOnInit() {
         this.propertyDetails = this.route.snapshot.data.DetailsResolve;
