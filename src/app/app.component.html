@@ -1,5 +1,11 @@
 <mat-toolbar color="primary" class="rental__toolbar mat-elevation-z6">
-    <span>Davis Rentals</span>
+    <mat-toolbar-row>
+        <span>Davis Rentals</span>
+        <span fxFlex></span>
+        <button mat-icon-button>
+            <mat-icon aria-label="contact us">email</mat-icon>
+        </button>
+    </mat-toolbar-row>
 </mat-toolbar>
 <main role="main" fxLayout>
     <router-outlet></router-outlet>
