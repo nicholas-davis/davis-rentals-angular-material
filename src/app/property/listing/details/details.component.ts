@@ -23,7 +23,7 @@ export class DetailsComponent implements OnInit {
     ) { }
 
     ngOnInit() {
-        this.propertyDetails = this.route.snapshot.data.DetailsResolve;
+        this.propertyDetails = this.route.snapshot.data.detailsResolve;
         this.setPageInfo();
         this.emitNewLayout();
         this.emitNewMapCoordinates();

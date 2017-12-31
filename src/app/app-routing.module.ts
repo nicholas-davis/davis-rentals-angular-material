@@ -25,12 +25,12 @@ const routes: Routes = [
                 path: 'listing/:address',
                 component: DetailsComponent,
                 resolve: {
-                    DetailsResolve
+                    detailsResolve: DetailsResolve
                 }
             }
         ]
     }
-    //{ path: '**', component: PageNotFoundComponent }
+    // { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
