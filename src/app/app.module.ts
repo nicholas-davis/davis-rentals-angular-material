@@ -10,7 +10,7 @@ import { AgmCoreModule } from '@agm/core';
 
 // Modules
 import { ListingModule } from './property/listing/listing.module';
-import { DetailsModule } from './property/listing/details/details.module';
+import { DetailsModule } from './property/details/details.module';
 
 // Services
 import { UtilityService } from './shared/utility.service';
@@ -19,7 +19,7 @@ import { UtilityService } from './shared/utility.service';
 import { AppComponent } from './app.component';
 import { PropertyComponent } from './property/property.component';
 import { ListingComponent } from './property/listing/listing.component';
-import { DetailsComponent } from './property/listing/details/details.component';
+import { DetailsComponent } from './property/details/details.component';
 
 @NgModule({
     declarations: [

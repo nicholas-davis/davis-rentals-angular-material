@@ -1,7 +1,7 @@
 import { Component, OnInit, HostBinding, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
-import { UtilityService } from '../../../shared/utility.service';
+import { UtilityService } from '../../shared/utility.service';
 
 @Component({
     selector: 'app-details',

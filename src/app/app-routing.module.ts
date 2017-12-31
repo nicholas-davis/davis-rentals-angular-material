@@ -3,9 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { PropertyComponent } from './property/property.component';
 import { ListingComponent } from './property/listing/listing.component';
-import { DetailsComponent } from './property/listing/details/details.component';
+import { DetailsComponent } from './property/details/details.component';
 
-import { DetailsResolve } from './property/listing/details/details.resolve';
+import { DetailsResolve } from './property/details/details.resolve';
 
 const routes: Routes = [
     {
