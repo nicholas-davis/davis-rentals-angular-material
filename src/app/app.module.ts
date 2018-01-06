@@ -15,6 +15,7 @@ import { AgmCoreModule } from '@agm/core';
 // Modules
 import { ListingModule } from './property/listing/listing.module';
 import { DetailsModule } from './property/details/details.module';
+import { ContactModule } from './contact/contact.module';
 
 // Services
 import { UtilityService } from './shared/utility.service';
@@ -24,13 +25,15 @@ import { AppComponent } from './app.component';
 import { PropertyComponent } from './property/property.component';
 import { ListingComponent } from './property/listing/listing.component';
 import { DetailsComponent } from './property/details/details.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         PropertyComponent,
         ListingComponent,
-        DetailsComponent
+        DetailsComponent,
+        ContactComponent
     ],
     imports: [
         BrowserModule,
@@ -48,6 +51,7 @@ import { DetailsComponent } from './property/details/details.component';
         BrowserAnimationsModule,
         DetailsModule,
         ListingModule,
+        ContactModule,
         AgmCoreModule.forRoot({
             apiKey: 'AIzaSyBSnJiWUwA6Dt7qI8BzY9y_cTql_yLmEpE'
         })
