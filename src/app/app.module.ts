@@ -4,7 +4,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 
-import { MatToolbarModule, MatCardModule, MatButtonModule, MatIconModule, MatGridListModule, MatListModule } from '@angular/material';
+import {
+    MatToolbarModule, MatCardModule, MatButtonModule,
+    MatIconModule, MatGridListModule, MatListModule, MatDialogModule,
+    MatTooltipModule
+} from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AgmCoreModule } from '@agm/core';
 
@@ -38,6 +42,8 @@ import { DetailsComponent } from './property/details/details.component';
         MatIconModule,
         MatGridListModule,
         MatListModule,
+        MatDialogModule,
+        MatTooltipModule,
         FlexLayoutModule,
         BrowserAnimationsModule,
         DetailsModule,
