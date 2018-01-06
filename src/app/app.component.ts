@@ -8,5 +8,4 @@ import { Component, HostBinding, ViewEncapsulation } from '@angular/core';
 })
 export class AppComponent {
   @HostBinding('attr.class') class = 'rental__root';
-  title = 'app';
 }
