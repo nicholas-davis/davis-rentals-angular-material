@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 import { MatGridListModule, MatListModule } from '@angular/material';
 
 // Services
-import { DetailsService } from './details.service';
+import { PropertyDetailsService } from './property-details.service';
 
 @NgModule({
     imports: [
@@ -18,7 +18,7 @@ import { DetailsService } from './details.service';
     ],
     declarations: [],
     providers: [
-        DetailsService
+        PropertyDetailsService
     ],
 })
-export class DetailsModule { }
+export class PropertyDetailsModule { }

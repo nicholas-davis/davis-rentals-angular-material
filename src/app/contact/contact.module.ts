@@ -7,7 +7,7 @@ import { MatButtonModule, MatIconModule, MatListModule, MatDialogModule } from '
 
 // Components
 import { ContactComponent } from './contact.component';
-import { DialogComponent } from './dialog/dialog.component';
+import { ContactDialogComponent } from './contact-dialog/contact-dialog.component';
 
 @NgModule({
   imports: [
@@ -22,10 +22,10 @@ import { DialogComponent } from './dialog/dialog.component';
   ],
   declarations: [
     ContactComponent,
-    DialogComponent
+    ContactDialogComponent
   ],
   entryComponents: [
-    DialogComponent
+    ContactDialogComponent
   ],
 
 })

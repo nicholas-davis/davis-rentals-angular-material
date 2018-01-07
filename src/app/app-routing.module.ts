@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { PropertyComponent } from './property/property.component';
-import { ListingComponent } from './property/listing/listing.component';
-import { DetailsComponent } from './property/details/details.component';
+import { PropertiesComponent } from './properties/properties.component';
+import { PropertyListingComponent } from './properties/property-listing/property-listing.component';
+import { PropertyDetailsComponent } from './properties/property-details/property-details.component';
 
-import { DetailsResolve } from './property/details/details.resolve';
+import { PropertyDetailsResolve } from './properties/property-details/property-details.resolve';
 
 const routes: Routes = [
     {
@@ -15,17 +15,17 @@ const routes: Routes = [
     },
     {
         path: '',
-        component: PropertyComponent,
+        component: PropertiesComponent,
         children: [
             {
                 path: '',
-                component: ListingComponent
+                component: PropertyListingComponent
             },
             {
                 path: 'listing/:address',
-                component: DetailsComponent,
+                component: PropertyDetailsComponent,
                 resolve: {
-                    detailsResolve: DetailsResolve
+                    propertyDetailsResolve: PropertyDetailsResolve
                 }
             }
         ]
@@ -37,7 +37,7 @@ const routes: Routes = [
     imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule],
     providers: [
-        DetailsResolve
+        PropertyDetailsResolve
     ]
 })
 export class AppRoutingModule { }

@@ -9,14 +9,14 @@
 
         </div>
     </div>
-    <mat-grid-list class="details__images" cols="4" rowHeight="150px">
+    <mat-grid-list class="property-details__images" cols="4" rowHeight="150px">
         <mat-grid-tile *ngFor="let image of propertyDetails.images | slice:0:5" [colspan]="image.cols" [rowspan]="image.rows">
             <img [src]="image.url" [alt]="image.title">
         </mat-grid-tile>
     </mat-grid-list>
     <div fxLayout fxLayoutGap="50px">
         <div fxFlex="70">
-            <div class="details__address" fxLayout>
+            <div class="property-details__address" fxLayout>
                 <div fxFlex fxLayout="column">
                     <h1 class="mat-h1" fxFlex>
                         {{propertyDetails.address.street}}
@@ -28,7 +28,7 @@
                     {{propertyDetails.price}} / {{propertyDetails.quota}}
                 </h2>
             </div>
-            <div class="details__specs" fxLayout>
+            <div class="property-details__specs" fxLayout>
                 <div class="listing__avatar-container" fxFlex fxLayout="column" fxLayoutAlign="start center">
                     <div mat-card-avatar>
                         <mat-icon class="listing__avatar-icon">hotel</mat-icon>
@@ -60,10 +60,10 @@
                     <h4 class="listing__avatar-title">Central air</h4>
                 </div>
             </div>
-            <div class="details__description">
+            <div class="property-details__description">
                 <p class="mat-subheading-2">{{propertyDetails.description.long}}</p>
             </div>
-            <div class="details__section" fxLayoutWrap>
+            <div class="property-details__section" fxLayoutWrap>
                 <h2 fxFlex="100">Features</h2>
                 <mat-list fxFlex="50">
                     <mat-list-item *ngFor="let feature of propertyDetails.features | slice:0:4">
@@ -80,7 +80,7 @@
                     </mat-list-item>
                 </mat-list>
             </div>
-            <div class="details__section" fxLayoutWrap>
+            <div class="property-details__section" fxLayoutWrap>
                 <h2 fxFlex="100">Amenities</h2>
                 <mat-list fxFlex="50">
                     <mat-list-item *ngFor="let amenity of propertyDetails.amenities | slice:0:4">
@@ -95,27 +95,27 @@
                     </mat-list-item>
                 </mat-list>
             </div>
-            <div class="details__section" *ngFor="let fact of propertyDetails.facts" fxLayoutWrap>
+            <div class="property-details__section" *ngFor="let fact of propertyDetails.facts" fxLayoutWrap>
                 <h2 fxFlex="100">{{fact.title}}</h2>
-                <mat-list class="details__facts" fxFlex>
+                <mat-list class="property-details__facts" fxFlex>
                     <mat-list-item *ngFor="let item of fact.list | slice:0:2">
                         <mat-icon mat-list-icon>{{fact.icon}}</mat-icon>
                         <h4 mat-line>{{item}}</h4>
                     </mat-list-item>
                 </mat-list>
-                <mat-list class="details__facts" fxFlex>
+                <mat-list class="property-details__facts" fxFlex>
                     <mat-list-item *ngFor="let item of fact.list | slice:2:4">
                         <mat-icon mat-list-icon>{{fact.icon}}</mat-icon>
                         <h4 mat-line>{{item}}</h4>
                     </mat-list-item>
                 </mat-list>
-                <mat-list class="details__facts" fxFlex>
+                <mat-list class="property-details__facts" fxFlex>
                     <mat-list-item *ngFor="let item of fact.list | slice:4:6">
                         <mat-icon mat-list-icon>{{fact.icon}}</mat-icon>
                         <h4 mat-line>{{item}}</h4>
                     </mat-list-item>
                 </mat-list>
-                <mat-list class="details__facts" fxFlex>
+                <mat-list class="property-details__facts" fxFlex>
                     <mat-list-item *ngFor="let item of fact.list | slice:6:8">
                         <mat-icon mat-list-icon>{{fact.icon}}</mat-icon>
                         <h4 mat-line>{{item}}</h4>
@@ -124,7 +124,7 @@
             </div>
         </div>
         <div fxFlex="30">
-            <mat-card class="details__apply mat-elevation-z10">
+            <mat-card class="property-details__apply mat-elevation-z10">
                 <mat-card-title>{{propertyDetails.type}} Application</mat-card-title>
                 <mat-card-subtitle>
                     Receive a response within 12-24 hours

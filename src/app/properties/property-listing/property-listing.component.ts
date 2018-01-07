@@ -1,15 +1,15 @@
 import { Component, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
 import { Subscription } from 'rxjs/Subscription';
 import { UtilityService } from '../../shared/utility.service';
-import { PropertyService } from '../property.service';
+import { PropertiesService } from '../properties.service';
 
 @Component({
-    selector: 'app-listing',
-    templateUrl: './listing.component.html',
-    styleUrls: ['./listing.component.scss'],
+    selector: 'app-property-listing',
+    templateUrl: './property-listing.component.html',
+    styleUrls: ['./property-listing.component.scss'],
     encapsulation: ViewEncapsulation.None
 })
-export class ListingComponent implements OnInit, OnDestroy {
+export class PropertyListingComponent implements OnInit, OnDestroy {
 
     properties: any;
     propertiesSubscription: Subscription;
@@ -18,7 +18,7 @@ export class ListingComponent implements OnInit, OnDestroy {
 
     constructor(
         private utilityService: UtilityService,
-        private propertyService: PropertyService
+        private propertiesService: PropertiesService
     ) { }
 
     ngOnInit() {
@@ -72,6 +72,6 @@ export class ListingComponent implements OnInit, OnDestroy {
 
     getProperties() {
         this.properties = [];
-        this.propertiesSubscription = this.propertyService.getProperties().subscribe(properties => this.properties = properties);
+        this.propertiesSubscription = this.propertiesService.getProperties().subscribe(properties => this.properties = properties);
     }
 }

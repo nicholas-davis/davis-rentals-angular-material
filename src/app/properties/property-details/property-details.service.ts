@@ -2,14 +2,13 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable()
-export class PropertyService {
+export class PropertyDetailsService {
 
     constructor(
         private http: HttpClient
     ) { }
 
-    getProperties() {
-       return this.http.get('api/mock-property.json');
+    getPropertyDetails() {
+        return this.http.get('api/mock-property.json').toPromise();
     }
-
 }

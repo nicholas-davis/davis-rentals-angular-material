@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 import { MatCardModule, MatIconModule, MatButtonModule } from '@angular/material';
 
 // Services
-import { PropertyService } from '../property.service';
+import { PropertiesService } from '../properties.service';
 
 @NgModule({
   imports: [
@@ -19,7 +19,7 @@ import { PropertyService } from '../property.service';
   ],
   declarations: [],
   providers: [
-    PropertyService
+    PropertiesService
   ],
 })
-export class ListingModule { }
+export class PropertyListingModule { }

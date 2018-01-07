@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Modules
 import { AppRoutingModule } from './app-routing.module';
 import { MatToolbarModule } from '@angular/material';
-import { PropertyModule } from './property/property.module';
+import { PropertiesModule } from './properties/properties.module';
 import { ContactModule } from './contact/contact.module';
 
 // Services
@@ -25,7 +25,7 @@ import { AppComponent } from './app.component';
         HttpClientModule,
         BrowserAnimationsModule,
         MatToolbarModule,
-        PropertyModule,
+        PropertiesModule,
         ContactModule
     ],
     providers: [

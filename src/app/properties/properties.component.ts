@@ -17,13 +17,13 @@ interface MapInterface {
 }
 
 @Component({
-    selector: 'app-property',
-    templateUrl: './property.component.html',
-    styleUrls: ['./property.component.scss'],
+    selector: 'app-properties',
+    templateUrl: './properties.component.html',
+    styleUrls: ['./properties.component.scss'],
     encapsulation: ViewEncapsulation.None
 })
-export class PropertyComponent implements OnInit, OnDestroy {
-    @HostBinding('attr.class') class = 'property';
+export class PropertiesComponent implements OnInit, OnDestroy {
+    @HostBinding('attr.class') class = 'properties';
     @ViewChild(AgmMap) agmMap: AgmMap;
 
     map: MapInterface;

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material';
-import { DialogComponent } from './dialog/dialog.component';
+import { ContactDialogComponent } from './contact-dialog/contact-dialog.component';
 
 @Component({
   selector: 'app-contact',
@@ -14,7 +14,7 @@ export class ContactComponent {
   ) { }
 
   contactDialog() {
-    this.dialog.open(DialogComponent);
+    this.dialog.open(ContactDialogComponent);
   }
 
 }

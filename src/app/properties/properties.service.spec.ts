@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { PropertyService } from './property.service';
+import { PropertiesService } from './properties.service';
 
 describe('PropertyService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [PropertyService]
+      providers: [PropertiesService]
     });
   });
 
-  it('should be created', inject([PropertyService], (service: PropertyService) => {
+  it('should be created', inject([PropertiesService], (service: PropertiesService) => {
     expect(service).toBeTruthy();
   }));
 });

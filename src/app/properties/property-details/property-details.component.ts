@@ -4,13 +4,13 @@ import { Meta, Title } from '@angular/platform-browser';
 import { UtilityService } from '../../shared/utility.service';
 
 @Component({
-    selector: 'app-details',
-    templateUrl: './details.component.html',
-    styleUrls: ['./details.component.scss'],
+    selector: 'app-property-details',
+    templateUrl: './property-details.component.html',
+    styleUrls: ['./property-details.component.scss'],
     encapsulation: ViewEncapsulation.None
 })
-export class DetailsComponent implements OnInit {
-    @HostBinding('attr.class') class = 'details';
+export class PropertyDetailsComponent implements OnInit {
+    @HostBinding('attr.class') class = 'property-details';
 
     propertyDetails: any;
     tiles: any;
@@ -23,7 +23,7 @@ export class DetailsComponent implements OnInit {
     ) { }
 
     ngOnInit() {
-        this.propertyDetails = this.route.snapshot.data.detailsResolve;
+        this.propertyDetails = this.route.snapshot.data.propertyDetailsResolve;
         this.setPageInfo();
         this.emitNewLayout();
         this.emitNewMapCoordinates();

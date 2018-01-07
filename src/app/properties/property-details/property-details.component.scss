@@ -1,12 +1,12 @@
-.details {
+.property-details {
     padding: 20px;
 }
 
-.details__images {
+.property-details__images {
     margin-top: 20px;
 }
 
-.details__address {
+.property-details__address {
     padding: 20px;
     margin-bottom: 30px;
     color: #FFF; //TODO: GRAB COLOR FROM MAT-VARs
@@ -21,23 +21,23 @@
     }
 }
 
-.details__specs {
+.property-details__specs {
     margin-bottom: 30px;
 }
 
-.details__description {
+.property-details__description {
     margin-bottom: 30px;
 }
 
-.details__facts {
+.property-details__facts {
     padding-top: 0 !important; //TODO: REMOVE THIS HACK;
 }
 
-.details__section {
+.property-details__section {
     margin-bottom: 30px;
 }
 
-.details__apply {
+.property-details__apply {
     margin-top: -35px;
     margin-right: 20px;
 }
