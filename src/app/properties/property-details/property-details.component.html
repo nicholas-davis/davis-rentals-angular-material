@@ -123,16 +123,6 @@
                 </mat-list>
             </div>
         </div>
-        <div fxFlex="30">
-            <mat-card class="property-details__apply mat-elevation-z10">
-                <mat-card-title>{{propertyDetails.type}} Application</mat-card-title>
-                <mat-card-subtitle>
-                    Receive a response within 12-24 hours
-                </mat-card-subtitle>
-                <mat-card-actions>
-                    <a href="{{propertyDetails.apply.url}}" target="_blank" fxFill mat-raised-button color="accent"> {{propertyDetails.apply.text}}</a>
-                </mat-card-actions>
-            </mat-card>
-        </div>
+        <app-apply-card [type]="propertyDetails.type" [url]="propertyDetails.apply.url" [text]="propertyDetails.apply.text" fxFlex="30"></app-apply-card>
     </div>
 </section>
