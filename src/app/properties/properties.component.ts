@@ -1,7 +1,7 @@
 import { Component, HostBinding, ViewChild, OnInit, OnDestroy, ChangeDetectorRef, ViewEncapsulation } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs/Subscription';
-import { UtilityService } from '../shared/utility.service';
+import { UtilityService } from '@app-shared/utility.service';
 import { AgmMap } from '@agm/core/directives/map';
 
 interface LayoutInterface {

@@ -10,7 +10,7 @@ import { PropertiesModule } from './properties/properties.module';
 import { ContactModule } from './contact/contact.module';
 
 // Services
-import { UtilityService } from './shared/utility.service';
+import { UtilityService } from '@app-shared/utility.service';
 
 // Components
 import { AppComponent } from './app.component';

@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
 import { Subscription } from 'rxjs/Subscription';
-import { UtilityService } from '../../shared/utility.service';
-import { PropertiesService } from '../properties.service';
+import { UtilityService } from '@app-shared/utility.service';
+import { PropertiesService } from '@app-properties/properties.service';
 
 @Component({
     selector: 'app-property-listing',

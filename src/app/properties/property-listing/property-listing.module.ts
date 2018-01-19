@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 import { MatCardModule, MatIconModule, MatButtonModule } from '@angular/material';
 
 // Services
-import { PropertiesService } from '../properties.service';
+import { PropertiesService } from '@app-properties/properties.service';
 
 @NgModule({
   imports: [
