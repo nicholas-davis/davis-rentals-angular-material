@@ -5,7 +5,7 @@ import { ContactDialogComponent } from './contact-dialog/contact-dialog.componen
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.sass']
+  styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
 
