@@ -1,0 +1,9 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$davis-rentals-app-primary: mat-palette($mat-blue, 900);
+$davis-rentals-app-accent:  mat-palette($mat-blue, A700);
+
+$davis-rentals-app-theme: mat-light-theme($davis-rentals-app-primary, $davis-rentals-app-accent);
+
+@include angular-material-theme($davis-rentals-app-theme);
