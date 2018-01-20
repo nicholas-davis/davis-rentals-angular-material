@@ -1,3 +1,5 @@
+@import "~variables.scss";
+
 .listing {
     margin: 20px;
 }
@@ -25,7 +27,7 @@
     position: relative;
 
     .mat-card-avatar {
-        background-color: #DDD; //TODO: GRAB COLOR FROM MAT-VARs
+        background-color: $grey; 
     }
 }
 

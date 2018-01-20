@@ -1,3 +1,5 @@
+@import "~variables.scss";
+
 .property-details {
     padding: 20px;
 }
@@ -9,8 +11,8 @@
 .property-details__address {
     padding: 20px;
     margin-bottom: 30px;
-    color: #FFF; //TODO: GRAB COLOR FROM MAT-VARs
-    background-color: #0e47a1; //TODO: GRAB COLOR FROM MAT-VARs
+    color: #FFF;
+    background-color: $primary;
 
     h1 {
         margin-bottom:0;
@@ -42,7 +44,7 @@
     position: relative;
 
     .mat-card-avatar {
-        background-color: #DDD; //TODO: GRAB COLOR FROM MAT-VARs
+        background-color: $grey;
     }
 }
 
